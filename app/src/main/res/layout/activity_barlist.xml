@@ -25,9 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:src="@drawable/map"
-        app:backgroundTint="#6454a4"
+        app:backgroundTint="@color/gps_img_color"
         app:backgroundTintMode="add"
-        app:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#FFFFFF" />
 </androidx.constraintlayout.widget.ConstraintLayout>

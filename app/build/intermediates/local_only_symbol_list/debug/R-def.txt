@@ -4,6 +4,7 @@ color black
 color buttonBackColor
 color buttonRegColor
 color buttonTwinColor
+color gps_img_color
 color white
 drawable custom_button_back
 drawable ic_add
@@ -12,10 +13,10 @@ drawable ic_launcher_foreground
 drawable ic_my_location_black_24dp
 drawable login
 drawable map
-drawable photo_camera
 drawable proba
 drawable progress_back
 drawable registration
+drawable user
 id TextInform2
 id barlist
 id btn_back
