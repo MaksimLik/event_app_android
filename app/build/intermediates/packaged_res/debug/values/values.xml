@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
+    <string name="add_review">Submit</string>
+    <string name="app_name">"Best Beer Bars"</string>
+    <string name="attach_a_photo_to_a_review">Attach a photo to a rieview</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="default_web_client_id" translatable="false">478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com</string>
+    <string name="description">Description</string>
+    <string name="email">Email</string>
+    <string name="gcm_defaultSenderId" translatable="false">478844041011</string>
+    <string name="google_api_key" translatable="false">AIzaSyBuJ9r-dWpGlEG2H2VMikJOSUuRjfkXcbg</string>
+    <string name="google_app_id" translatable="false">1:478844041011:android:0fc9db6afe320c44db7046</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBuJ9r-dWpGlEG2H2VMikJOSUuRjfkXcbg</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAfCrfjCEQAkQ1ON-BV2i2W1eBxmIZG-hQ</string>
+    <string name="google_storage_bucket" translatable="false">myappmobile-ede7b.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="password">Password</string>
+    <string name="project_id" translatable="false">myappmobile-ede7b</string>
+    <string name="rating">Rating</string>
+    <string name="registration">Register</string>
+    <string name="review_title">Review Title</string>
+    <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
+    <string name="title">Title</string>
+    <style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="PurpleActionBarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">#6854A4</item>
+        
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+    <style name="Theme.FirebaseDB" parent="Base.Theme.FirebaseDB"/>
+</resources>

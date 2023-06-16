@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">"Best Beer Bars"</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="registration">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
+    <string name="add_review">Submit</string>
+    <string name="rating">Rating</string>
+    <string name="review_title">Review Title</string>
+    <string name="description">Description</string>
+    <string name="attach_a_photo_to_a_review">Attach a photo to a rieview</string>
+    <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
+    <string name="title">Title</string>
+</resources>

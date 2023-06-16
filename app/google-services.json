@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "478844041011",
+    "project_id": "myappmobile-ede7b",
+    "storage_bucket": "myappmobile-ede7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478844041011:android:0fc9db6afe320c44db7046",
+        "android_client_info": {
+          "package_name": "com.example.firebasedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478844041011-ide4oqj3s3ekjd1u7okd3nt9abqke0vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasedb",
+            "certificate_hash": "165fa85244a623df05a615fd2215c1accaa01eb8"
+          }
+        },
+        {
+          "client_id": "478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuJ9r-dWpGlEG2H2VMikJOSUuRjfkXcbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
