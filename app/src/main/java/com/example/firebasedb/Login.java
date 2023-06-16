@@ -56,14 +56,6 @@ public class Login extends AppCompatActivity {
         buttonRegister = findViewById(R.id.btn_register);
         progressBar = findViewById(R.id.progressBar);
 
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Register.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override

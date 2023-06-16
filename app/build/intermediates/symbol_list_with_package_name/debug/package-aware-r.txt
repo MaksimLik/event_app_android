@@ -3085,7 +3085,6 @@ id FUNCTION
 id LoginNow
 id META
 id NO_DEBUG
-id RegisterNow
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3863,7 +3862,6 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
 string click_to_login
-string click_to_register
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title

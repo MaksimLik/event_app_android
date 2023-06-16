@@ -11,7 +11,6 @@ drawable map
 drawable photo_camera
 drawable progress_back
 id LoginNow
-id RegisterNow
 id barlist
 id btn_login
 id btn_register
@@ -54,7 +53,6 @@ string add_review
 string app_name
 string attach_a_photo_to_a_review
 string click_to_login
-string click_to_register
 string default_web_client_id
 string description
 string email
