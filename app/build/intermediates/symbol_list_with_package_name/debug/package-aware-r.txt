@@ -1378,6 +1378,9 @@ color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
+color buttonBackColor
+color buttonRegColor
+color buttonTwinColor
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -3074,6 +3077,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable photo_camera
+drawable proba
 drawable progress_back
 drawable registration
 drawable test_level_drawable

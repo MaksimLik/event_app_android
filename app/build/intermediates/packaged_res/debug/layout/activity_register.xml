@@ -68,7 +68,8 @@
             android:id="@+id/btn_register"
             android:layout_width="139dp"
             android:layout_height="wrap_content"
-            android:text="@string/registration" />
+            android:text="@string/registration"
+            android:backgroundTint="@color/buttonRegColor" />
 
         <Space
             android:layout_width="wrap_content"
@@ -80,7 +81,8 @@
             android:layout_width="143dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="@string/back" />
+            android:text="@string/back"
+            android:backgroundTint="@color/buttonBackColor" />
 
     </LinearLayout>
 

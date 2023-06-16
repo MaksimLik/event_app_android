@@ -1377,6 +1377,9 @@ int color browser_actions_bg_grey 0x7f050028
 int color browser_actions_divider_color 0x7f050029
 int color browser_actions_text_color 0x7f05002a
 int color browser_actions_title_color 0x7f05002b
+int color buttonBackColor 0x7f0502f5
+int color buttonRegColor 0x7f0502f6
+int color buttonTwinColor 0x7f0502f7
 int color button_material_dark 0x7f05002c
 int color button_material_light 0x7f05002d
 int color cardview_dark_background 0x7f05002e
@@ -3073,6 +3076,7 @@ int drawable notification_template_icon_low_bg 0x7f0700f2
 int drawable notification_tile_bg 0x7f0700f3
 int drawable notify_panel_notification_icon_bg 0x7f0700f4
 int drawable photo_camera 0x7f0700f5
+int drawable proba 0x7f0700fc
 int drawable progress_back 0x7f0700f6
 int drawable registration 0x7f0700fb
 int drawable test_level_drawable 0x7f0700f7

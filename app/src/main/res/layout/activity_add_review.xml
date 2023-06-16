@@ -122,7 +122,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
                     android:contentDescription="@string/attach_a_photo_to_a_review"
-                    android:src="@drawable/photo_camera"
+                    android:src="@drawable/proba"
                     android:backgroundTint="#eadeff"
                     app:fabSize="normal" />
             </LinearLayout>
