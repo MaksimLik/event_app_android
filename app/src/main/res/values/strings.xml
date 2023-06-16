@@ -16,4 +16,6 @@
     <string name="attach_a_photo_to_a_review">Attach a photo to a rieview</string>
     <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
     <string name="title">Title</string>
+    <string name="login_button_text">If you don\'t have an account click to Register</string>
+    <string name="registration_button_text">If you have account - fill all fields and click login</string>
 </resources>

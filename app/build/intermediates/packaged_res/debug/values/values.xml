@@ -18,11 +18,13 @@
     <string name="google_storage_bucket" translatable="false">myappmobile-ede7b.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login">Login</string>
+    <string name="login_button_text">If you don\'t have an account click to Register</string>
     <string name="logout">Logout</string>
     <string name="password">Password</string>
     <string name="project_id" translatable="false">myappmobile-ede7b</string>
     <string name="rating">Rating</string>
     <string name="registration">Register</string>
+    <string name="registration_button_text">If you have account - fill all fields and click login</string>
     <string name="review_title">Review Title</string>
     <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
     <string name="title">Title</string>

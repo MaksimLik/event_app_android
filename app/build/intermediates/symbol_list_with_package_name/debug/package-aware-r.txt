@@ -3000,6 +3000,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_my_location_black_24dp
 drawable ic_search_black_24
+drawable login
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3323,6 +3324,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3903,6 +3905,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string login
+string login_button_text
 string logout
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4012,6 +4015,7 @@ string path_password_strike_through
 string project_id
 string rating
 string registration
+string registration_button_text
 string review_title
 string search_menu_title
 string searchbar_scrolling_view_behavior
