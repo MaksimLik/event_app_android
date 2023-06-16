@@ -11,9 +11,10 @@ drawable login
 drawable map
 drawable photo_camera
 drawable progress_back
-id LoginNow
+drawable registration
+id TextInform2
 id barlist
-id btn_login
+id btn_back
 id btn_register
 id email
 id frame_layout
@@ -29,6 +30,7 @@ id idPBLoading
 id idTILReviewDescription
 id idaddReviewFAB
 id imageView2
+id imageView4
 id it_barname
 id it_barphoto
 id it_barrating
@@ -39,6 +41,8 @@ id no_internet_text
 id password
 id progressBar
 id retry_button
+id textInform
+id textView4
 layout activity_add_review
 layout activity_bar_detail
 layout activity_barlist
@@ -54,7 +58,7 @@ string a_button_to_locate_a_user_on_a_map
 string add_review
 string app_name
 string attach_a_photo_to_a_review
-string click_to_login
+string back
 string default_web_client_id
 string description
 string email
@@ -65,6 +69,8 @@ string google_crash_reporting_api_key
 string google_maps_key
 string google_storage_bucket
 string hello_blank_fragment
+string inform1
+string inform2
 string login
 string login_button_text
 string logout

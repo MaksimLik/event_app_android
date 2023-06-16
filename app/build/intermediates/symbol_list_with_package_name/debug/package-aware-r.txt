@@ -3075,6 +3075,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable photo_camera
 drawable progress_back
+drawable registration
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3083,7 +3084,6 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
-id LoginNow
 id META
 id NO_DEBUG
 id SHIFT
@@ -3093,6 +3093,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TextInform2
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3185,7 +3186,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btn_login
+id btn_back
 id btn_register
 id buttonPanel
 id cache_measures
@@ -3325,6 +3326,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView2
+id imageView4
 id immediateStop
 id included
 id indeterminate
@@ -3561,10 +3563,12 @@ id terrain
 id text
 id text2
 id textEnd
+id textInform
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3853,6 +3857,7 @@ string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string attach_a_photo_to_a_review
+string back
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -3863,7 +3868,6 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-string click_to_login
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -3903,6 +3907,8 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string inform1
+string inform2
 string item_view_role_description
 string login
 string login_button_text

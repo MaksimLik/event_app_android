@@ -3074,6 +3074,7 @@ int drawable notification_tile_bg 0x7f0700f3
 int drawable notify_panel_notification_icon_bg 0x7f0700f4
 int drawable photo_camera 0x7f0700f5
 int drawable progress_back 0x7f0700f6
+int drawable registration 0x7f0700fb
 int drawable test_level_drawable 0x7f0700f7
 int drawable tooltip_frame_dark 0x7f0700f8
 int drawable tooltip_frame_light 0x7f0700f9
@@ -3082,7 +3083,6 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
 int id FUNCTION 0x7f080004
-int id LoginNow 0x7f080005
 int id META 0x7f080006
 int id NO_DEBUG 0x7f080007
 int id SHIFT 0x7f080008
@@ -3092,6 +3092,7 @@ int id SHOW_PROGRESS 0x7f08000b
 int id SYM 0x7f08000c
 int id TOP_END 0x7f08000d
 int id TOP_START 0x7f08000e
+int id TextInform2 0x7f080219
 int id accelerate 0x7f08000f
 int id accessibility_action_clickable_span 0x7f080010
 int id accessibility_custom_action_0 0x7f080011
@@ -3184,7 +3185,7 @@ int id browser_actions_menu_item_icon 0x7f080067
 int id browser_actions_menu_item_text 0x7f080068
 int id browser_actions_menu_items 0x7f080069
 int id browser_actions_menu_view 0x7f08006a
-int id btn_login 0x7f08006b
+int id btn_back 0x7f080218
 int id btn_register 0x7f08006c
 int id buttonPanel 0x7f08006d
 int id cache_measures 0x7f08006e
@@ -3324,6 +3325,7 @@ int id ignore 0x7f0800f3
 int id ignoreRequest 0x7f0800f4
 int id image 0x7f0800f5
 int id imageView2 0x7f080217
+int id imageView4 0x7f08021c
 int id immediateStop 0x7f0800f6
 int id included 0x7f0800f7
 int id indeterminate 0x7f0800f8
@@ -3560,10 +3562,12 @@ int id terrain 0x7f0801de
 int id text 0x7f0801df
 int id text2 0x7f0801e0
 int id textEnd 0x7f0801e1
+int id textInform 0x7f08021a
 int id textSpacerNoButtons 0x7f0801e2
 int id textSpacerNoTitle 0x7f0801e3
 int id textStart 0x7f0801e4
 int id textTop 0x7f0801e5
+int id textView4 0x7f08021b
 int id text_input_end_icon 0x7f0801e6
 int id text_input_error_icon 0x7f0801e7
 int id text_input_start_icon 0x7f0801e8
@@ -3852,6 +3856,7 @@ int string androidx_startup 0x7f11001d
 int string app_name 0x7f11001e
 int string appbar_scrolling_view_behavior 0x7f11001f
 int string attach_a_photo_to_a_review 0x7f110020
+int string back 0x7f1100ce
 int string bottom_sheet_behavior 0x7f110021
 int string bottomsheet_action_collapse 0x7f110022
 int string bottomsheet_action_expand 0x7f110023
@@ -3862,7 +3867,6 @@ int string character_counter_content_description 0x7f110027
 int string character_counter_overflowed_content_description 0x7f110028
 int string character_counter_pattern 0x7f110029
 int string clear_text_end_icon_content_description 0x7f11002a
-int string click_to_login 0x7f11002b
 int string common_google_play_services_enable_button 0x7f11002c
 int string common_google_play_services_enable_text 0x7f11002d
 int string common_google_play_services_enable_title 0x7f11002e
@@ -3902,6 +3906,8 @@ int string google_storage_bucket 0x7f11004f
 int string hello_blank_fragment 0x7f110050
 int string hide_bottom_view_on_scroll_behavior 0x7f110051
 int string icon_content_description 0x7f110052
+int string inform1 0x7f1100cf
+int string inform2 0x7f1100d0
 int string item_view_role_description 0x7f110053
 int string login 0x7f110054
 int string login_button_text 0x7f1100cc

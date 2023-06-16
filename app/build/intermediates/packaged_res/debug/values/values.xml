@@ -5,8 +5,8 @@
     <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
     <string name="add_review">Submit</string>
     <string name="app_name">"Map of events"</string>
-    <string name="attach_a_photo_to_a_review">Attach a photo to a rieview</string>
-    <string name="click_to_login">Click to Login</string>
+    <string name="attach_a_photo_to_a_review">Attach a photo to a review</string>
+    <string name="back">Back</string>
     <string name="default_web_client_id" translatable="false">478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com</string>
     <string name="description">Description</string>
     <string name="email">Email</string>
@@ -17,6 +17,8 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAfCrfjCEQAkQ1ON-BV2i2W1eBxmIZG-hQ</string>
     <string name="google_storage_bucket" translatable="false">myappmobile-ede7b.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inform1">If you have account click - Back</string>
+    <string name="inform2">If you don\'t have account you must to fill all fields and click - Register</string>
     <string name="login">Login</string>
     <string name="login_button_text">If you don\'t have an account click to Register</string>
     <string name="logout">Logout</string>
