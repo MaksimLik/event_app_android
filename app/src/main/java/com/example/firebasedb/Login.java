@@ -23,6 +23,7 @@ public class Login extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword;
     Button buttonLogin;
+    Button buttonRegister;
     ProgressBar progressBar;
 
     TextView textView;
@@ -52,10 +53,19 @@ public class Login extends AppCompatActivity {
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.btn_login);
+        buttonRegister = findViewById(R.id.btn_register);
         progressBar = findViewById(R.id.progressBar);
-        textView = findViewById(R.id.RegisterNow);
 
         textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Register.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Register.class);
