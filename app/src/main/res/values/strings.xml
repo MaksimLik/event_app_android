@@ -9,24 +9,23 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
     <string name="add_review">Submit</string>
-    <string name="rating">Rating</string>
-    <string name="review_title">Review Title</string>
+    <string name="age_category">Age category</string>
+    <string name="name_event">Name of event</string>
     <string name="description">Description</string>
     <string name="attach_a_photo_to_a_review">Attach a photo to a review</string>
     <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
-    <string name="title">Title</string>
+    <string name="title">Name of event</string>
     <string name="login_button_text">If you don\'t have an account click to Register</string>
     <string name="registration_button_text">If you have account - fill all fields and click login</string>
     <string name="back">Back</string>
     <string name="inform1">If you have account click - Back</string>
     <string name="inform2">If you don\'t have account you must to fill all fields and click - Register</string>
-    <string name="ranking">Сhoose a rating, 1 is the minimum, 5 is the maximum</string>
+    <string name="age">Сhoose an age category</string>
 
     <string-array name="rating_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>For all</item>
+        <item>For students</item>
+        <item>For kids</item>
+        <item>For young people</item>
     </string-array>
 </resources>

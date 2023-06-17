@@ -68,6 +68,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string a_button_to_locate_a_user_on_a_map
 string add_review
+string age
+string age_category
 string app_name
 string attach_a_photo_to_a_review
 string back
@@ -86,13 +88,11 @@ string inform2
 string login
 string login_button_text
 string logout
+string name_event
 string password
 string project_id
-string ranking
-string rating
 string registration
 string registration_button_text
-string review_title
 string thumbnail_for_an_uploaded_image
 string title
 style Base.Theme.FirebaseDB

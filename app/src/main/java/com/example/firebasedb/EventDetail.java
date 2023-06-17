@@ -23,6 +23,7 @@ public class EventDetail extends AppCompatActivity {
     TextView name_of_event;
     TextView description_of_event;
     TextView rating_of_event;
+
     FloatingActionButton repostButton;
 
     @Override
@@ -37,14 +38,14 @@ public class EventDetail extends AppCompatActivity {
 
         // Retrieve data from the intent extras sent by BarAdapter.java
         Intent intent = getIntent();
-        String barName = intent.getStringExtra("BAR_NAME");
-        String barDescription = intent.getStringExtra("BAR_DESCRIPTION");
-        String barRating = intent.getStringExtra("BAR_RATING");
+        String eventName = intent.getStringExtra("EVENT_NAME");
+        String eventDescription = intent.getStringExtra("EVENT_DESCRIPTION");
+        String eventAge = intent.getStringExtra("EVENT_AGE");
 
         // Set the TextViews with the data from BarAdapter.java
-        name_of_event.setText(barName);
-        description_of_event.setText(barDescription);
-        rating_of_event.setText(barRating);
+        name_of_event.setText(eventName);
+        description_of_event.setText(eventDescription);
+        rating_of_event.setText(eventAge);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();

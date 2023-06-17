@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:hint="@string/review_title"
+                android:hint="@string/name_event"
                 android:padding="5dp"
                 android:background="#ffffff"
                 android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
@@ -72,12 +72,11 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:hint="@string/rating"
+                android:background="#D3CACA"
+                android:hint="@string/age_category"
                 android:padding="5dp"
-                android:background="#ffffff"
-                android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
-
 
                 <Spinner
                     android:id="@+id/idSpinnerReviewRating"
@@ -85,8 +84,8 @@
                     android:layout_height="45dp"
                     android:importantForAutofill="no"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
-                    android:textSize="14sp" />
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" /> <!-- Добавлено: фон всплывающего списка -->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -94,7 +93,7 @@
                     android:layout_alignBottom="@id/idSpinnerReviewRating"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/ranking"
+                    android:text="@string/age"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 

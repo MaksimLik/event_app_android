@@ -20,9 +20,9 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
 
 
     Context context;
-    ArrayList<Reviews> list;
+    ArrayList<Events> list;
 
-    public EventFunctions(Context context, ArrayList<Reviews> list) {
+    public EventFunctions(Context context, ArrayList<Events> list) {
         this.context = context;
         this.list = list;
     }
@@ -37,16 +37,16 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
     @Override
     public void onBindViewHolder(@NonNull BarViewHolder holder, int position) {
 
-        Reviews bar = list.get(position);
-        holder.barname.setText(bar.getBeer_name());
-        holder.barrating.setText(String.valueOf(bar.getBeer_rating()));
+        Events events = list.get(position);
+        holder.eventname.setText(events.getEvent_name());
+        holder.eventage.setText(String.valueOf(events.getEvent_age()));
 
         // Load the image from string using Glide
-        String image = bar.getBeer_photo();
+        String image = events.getEvent_image();
         // Convert the base64 string to a byte array
         byte[] decodedString = Base64.decode(image, Base64.DEFAULT);
         // Load the byte array into Glide
-        Glide.with(context).asBitmap().load(decodedString).into(holder.barphoto);
+        Glide.with(context).asBitmap().load(decodedString).into(holder.eventinamge);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,9 +54,9 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
                 Intent intent = new Intent(v.getContext(), EventDetail.class);
 
                 // Pass the data to BarDetailActivity using intent extras
-                intent.putExtra("BAR_NAME", bar.getBeer_name());
-                intent.putExtra("BAR_DESCRIPTION", bar.getBeer_description());
-                intent.putExtra("BAR_RATING", bar.getBeer_rating());
+                intent.putExtra("EVENT_NAME", events.getEvent_name());
+                intent.putExtra("EVENT_DESCRIPTION", events.getEvent_description());
+                intent.putExtra("EVENT_AGE", events.getEvent_age());
 
                 v.getContext().startActivity(intent);
 
@@ -77,15 +77,15 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
 
     public static class BarViewHolder extends RecyclerView.ViewHolder{
 
-        TextView barname, barrating;
-        ImageView barphoto;
+        TextView eventname, eventage;
+        ImageView eventinamge;
 
         public BarViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            barname = itemView.findViewById(R.id.it_barname);
-            barrating = itemView.findViewById(R.id.it_barrating);
-            barphoto = itemView.findViewById(R.id.it_barphoto);
+            eventname = itemView.findViewById(R.id.it_barname);
+            eventage = itemView.findViewById(R.id.it_barrating);
+            eventinamge = itemView.findViewById(R.id.it_barphoto);
 
         }
     }

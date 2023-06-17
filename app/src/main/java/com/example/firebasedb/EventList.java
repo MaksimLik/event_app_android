@@ -28,7 +28,7 @@ public class EventList extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     EventFunctions eventFunctions;
-    ArrayList<Reviews> list;
+    ArrayList<Events> list;
     FloatingActionButton mapButton;
     FirebaseAuth auth;
     FirebaseUser user;
@@ -52,7 +52,7 @@ public class EventList extends AppCompatActivity {
         recyclerView = findViewById(R.id.barlist);
         mapButton = findViewById(R.id.idMapButton);
         firebaseDatabase = FirebaseDatabase.getInstance("https://myappmobile-ede7b-default-rtdb.europe-west1.firebasedatabase.app");
-        databaseReference = firebaseDatabase.getReference("Reviews");
+        databaseReference = firebaseDatabase.getReference("Events");
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -67,7 +67,7 @@ public class EventList extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                        Reviews bar = dataSnapshot.getValue(Reviews.class);
+                        Events bar = dataSnapshot.getValue(Events.class);
                         list.add(bar);
                     }
                     eventFunctions.notifyDataSetChanged();

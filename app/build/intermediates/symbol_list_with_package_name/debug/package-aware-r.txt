@@ -3865,6 +3865,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add_review
+string age
+string age_category
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4024,6 +4026,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string name_event
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -4031,11 +4034,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
-string ranking
-string rating
 string registration
 string registration_button_text
-string review_title
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

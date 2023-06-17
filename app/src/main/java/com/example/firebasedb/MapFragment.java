@@ -108,8 +108,8 @@ public class MapFragment extends Fragment {
                             return;
                         }
                         Intent intent = new Intent(getActivity(), EventDescription.class);
-                        intent.putExtra("lat", latLng.latitude);
-                        intent.putExtra("lng", latLng.longitude);
+                        intent.putExtra("ax", latLng.latitude);
+                        intent.putExtra("ay", latLng.longitude);
                         startActivity(intent);
                     }
                 });

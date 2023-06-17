@@ -40,10 +40,10 @@ public class EventDescription extends AppCompatActivity {
     private Spinner review_rating;
     private ImageView review_image;
     private DatabaseReference databaseReference;
-    private Reviews review;
+    private Events review;
 
-    private double lat;
-    private double lng;
+    private double ax;
+    private double ay;
     FirebaseUser user;
     FirebaseAuth auth;
 
@@ -77,12 +77,12 @@ public class EventDescription extends AppCompatActivity {
         // Get the latitude and longtiude from the intent extras
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            lat = extras.getDouble("lat");
-            lng = extras.getDouble("lng");
+            ax = extras.getDouble("ax");
+            ay = extras.getDouble("ay");
         }
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance("https://myappmobile-ede7b-default-rtdb.europe-west1.firebasedatabase.app");
-        databaseReference = firebaseDatabase.getReference("Reviews");
+        databaseReference = firebaseDatabase.getReference("Events");
 
         // Add functionality to the add_photo_btn
         add_photo_btn.setOnClickListener(new View.OnClickListener() {
@@ -154,13 +154,13 @@ public class EventDescription extends AppCompatActivity {
         }
         // Convert image file to base64 string
         String img_file_base64 = encodeFileToBase64Binary(img_file);
-        review = new Reviews();
-        review.setReview_title(title);
-        review.setReview_rating(rating);
-        review.setReview_description(description);
-        review.setReview_image(img_file_base64);
-        review.setReview_lat(lat);
-        review.setReview_lng(lng);
+        review = new Events();
+        review.setEvent_title(title);
+        review.setEvent_age(rating);
+        review.setEvent_description(description);
+        review.setEvent_image(img_file_base64);
+        review.setEvent_ax(ax);
+        review.setEvent_ay(ay);
         return true;
     }
 
