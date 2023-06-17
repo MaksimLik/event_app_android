@@ -66,7 +66,6 @@ public class AddReviewActivity extends AppCompatActivity {
 
         review_title = findViewById(R.id.idEdtReviewTitle);
         review_rating = findViewById(R.id.idSpinnerReviewRating);
-    //    review_rating = findViewById(R.id.idEdtReviewRating);
         review_description = findViewById(R.id.idEdtReviewDescription);
         FloatingActionButton add_photo_btn = findViewById(R.id.idFABAddImage);
         review_image = findViewById(R.id.idIVReviewImage);

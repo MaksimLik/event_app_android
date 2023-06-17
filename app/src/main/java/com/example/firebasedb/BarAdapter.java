@@ -1,6 +1,7 @@
 package com.example.firebasedb;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +47,27 @@ public class BarAdapter extends RecyclerView.Adapter<BarAdapter.BarViewHolder>{
         byte[] decodedString = Base64.decode(image, Base64.DEFAULT);
         // Load the byte array into Glide
         Glide.with(context).asBitmap().load(decodedString).into(holder.barphoto);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Detail_act.class);
+
+                // Pass the data to BarDetailActivity using intent extras
+                intent.putExtra("BAR_NAME", bar.getBeer_name());
+                intent.putExtra("BAR_DESCRIPTION", bar.getBeer_description());
+                intent.putExtra("BAR_RATING", bar.getBeer_rating());
+
+                v.getContext().startActivity(intent);
+
+//                // Move to new activity
+//                v.getContext().startActivity(new Intent(v.getContext(), BarDetailActivity.class));
+//                Intent intent = new Intent();
+//                intent.putExtra("BAR_NAME", bar.getBeer_name());
+//                intent.putExtra("BAR_RATING", bar.getBeer_rating());
+
+            }
+        });
     }
 
     @Override

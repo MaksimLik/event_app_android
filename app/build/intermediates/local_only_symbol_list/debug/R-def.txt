@@ -13,7 +13,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_my_location_black_24dp
 drawable login
-drawable map
 drawable map_icon
 drawable proba
 drawable progress_back
@@ -23,6 +22,7 @@ id TextInform2
 id barlist
 id btn_back
 id btn_register
+id description_event
 id email
 id frame_layout
 id idBtnSubmit
@@ -43,16 +43,19 @@ id it_barphoto
 id it_barrating
 id logout
 id map
+id name_event
 id no_internet_layout
 id no_internet_text
 id password
 id progressBar
+id rating_event
 id retry_button
 id textInform
 id textView4
 layout activity_add_review
 layout activity_bar_detail
 layout activity_barlist
+layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_register

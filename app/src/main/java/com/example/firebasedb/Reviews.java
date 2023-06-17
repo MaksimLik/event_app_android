@@ -6,7 +6,7 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class Reviews {
     public String beer_name;
     public String beer_description;
-    public Object beer_rating;
+    public String beer_rating;
     public double beer_coordinates_x;
     public double beer_coordinates_y;
     public String beer_photo;
@@ -15,7 +15,7 @@ public class Reviews {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public Reviews(String beer_name, Object beer_rating, String beer_description, double beer_coordinates_x, double beer_coordinates_y, String beer_photo) {
+    public Reviews(String beer_name, String beer_rating, String beer_description, double beer_coordinates_x, double beer_coordinates_y, String beer_photo) {
         this.beer_name = beer_name;
         this.beer_rating = beer_rating;
         this.beer_description = beer_description;
@@ -32,7 +32,7 @@ public class Reviews {
         this.beer_description = description;
     }
 
-    public void setReview_rating(Object rating) {
+    public void setReview_rating(String rating) {
         this.beer_rating = rating;
     }
 
@@ -56,7 +56,7 @@ public class Reviews {
         return beer_description;
     }
 
-    public Object getBeer_rating() {
+    public String getBeer_rating() {
         return beer_rating;
     }
 

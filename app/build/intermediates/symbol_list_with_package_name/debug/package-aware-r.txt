@@ -3017,7 +3017,6 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
-drawable map
 drawable map_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -3242,6 +3241,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description_event
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3420,6 +3420,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_event
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3466,6 +3467,7 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id rating_event
 id ratio
 id rectangles
 id retry_button
@@ -3742,6 +3744,7 @@ layout abc_tooltip
 layout activity_add_review
 layout activity_bar_detail
 layout activity_barlist
+layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_register

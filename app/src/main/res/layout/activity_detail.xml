@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_act"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name_of_event" />
+
+    <TextView
+        android:id="@+id/description_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description_of_event" />
+
+    <TextView
+        android:id="@+id/rating_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rating_of_event" />
+</LinearLayout>
