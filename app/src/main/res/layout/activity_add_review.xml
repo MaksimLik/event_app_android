@@ -77,16 +77,7 @@
                 android:background="#ffffff"
                 android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
                 app:hintTextColor="@color/black">
-
-<!--                <com.google.android.material.textfield.TextInputEditText-->
-<!--                    android:id="@+id/idEdtReviewRating"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:importantForAutofill="no"-->
-<!--                    android:inputType="number"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"-->
-<!--                    android:textSize="14sp" />-->
+                
 
                 <Spinner
                     android:id="@+id/idSpinnerReviewRating"
@@ -95,6 +86,16 @@
                     android:importantForAutofill="no"
                     android:textColor="@color/black"
                     android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/idSpinnerReviewRating"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/ranking"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>

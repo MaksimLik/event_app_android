@@ -20,6 +20,7 @@
     <string name="back">Back</string>
     <string name="inform1">If you have account click - Back</string>
     <string name="inform2">If you don\'t have account you must to fill all fields and click - Register</string>
+    <string name="ranking">Сhoose a rating, 1 is the minimum, 5 is the maximum</string>
 
     <string-array name="rating_values">
         <item>1</item>
