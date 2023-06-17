@@ -33,7 +33,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Random;
 
-public class DescriptionActivity extends AppCompatActivity {
+public class EventDescription extends AppCompatActivity {
 
     private File img_file;
     private TextInputEditText review_title, review_description;
@@ -55,7 +55,7 @@ public class DescriptionActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         if(user == null){
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
         }
@@ -89,10 +89,10 @@ public class DescriptionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // If the camera permission is not granted
-                if ((ContextCompat.checkSelfPermission(DescriptionActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) ||
-                        (ContextCompat.checkSelfPermission(DescriptionActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)){
+                if ((ContextCompat.checkSelfPermission(EventDescription.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) ||
+                        (ContextCompat.checkSelfPermission(EventDescription.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)){
                     // Request the permission
-                    ActivityCompat.requestPermissions(DescriptionActivity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
+                    ActivityCompat.requestPermissions(EventDescription.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
                 } else {
                     // Let the user take a photo or choose from the gallery
                     // Open the upload image activity
@@ -122,16 +122,16 @@ public class DescriptionActivity extends AppCompatActivity {
                         // Update the activity with thumbnail of the image
                         review_image.setImageURI(imageUri);
                         review_image.setVisibility(View.VISIBLE);
-                        Toast.makeText(DescriptionActivity.this, "Image added", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EventDescription.this, "Image added", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(DescriptionActivity.this, "File does not exist", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EventDescription.this, "File does not exist", Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
             else {
-                Toast.makeText(DescriptionActivity.this, "Invalid file type. Supported are: jpg/gif/img/png", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EventDescription.this, "Invalid file type. Supported are: jpg/gif/img/png", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -184,10 +184,10 @@ public class DescriptionActivity extends AppCompatActivity {
             Random random = new Random();
             int id = random.nextInt(1000000);
             databaseReference.child(String.valueOf(id)).setValue(review);
-            Toast.makeText(DescriptionActivity.this, "Review added", Toast.LENGTH_SHORT).show();
+            Toast.makeText(EventDescription.this, "Review added", Toast.LENGTH_SHORT).show();
             finish();
         } else {
-            Toast.makeText(DescriptionActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(EventDescription.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -203,7 +203,7 @@ public class DescriptionActivity extends AppCompatActivity {
 
         if (id == R.id.logout) {
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
             return true;

@@ -16,13 +16,13 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class BarAdapter extends RecyclerView.Adapter<BarAdapter.BarViewHolder>{
+public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewHolder>{
 
 
     Context context;
     ArrayList<Reviews> list;
 
-    public BarAdapter(Context context, ArrayList<Reviews> list) {
+    public EventFunctions(Context context, ArrayList<Reviews> list) {
         this.context = context;
         this.list = list;
     }
@@ -51,7 +51,7 @@ public class BarAdapter extends RecyclerView.Adapter<BarAdapter.BarViewHolder>{
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Detail_act.class);
+                Intent intent = new Intent(v.getContext(), EventDetail.class);
 
                 // Pass the data to BarDetailActivity using intent extras
                 intent.putExtra("BAR_NAME", bar.getBeer_name());

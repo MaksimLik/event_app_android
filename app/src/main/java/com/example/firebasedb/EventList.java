@@ -27,7 +27,7 @@ public class EventList extends AppCompatActivity {
     RecyclerView recyclerView;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    BarAdapter barAdapter;
+    EventFunctions eventFunctions;
     ArrayList<Reviews> list;
     FloatingActionButton mapButton;
     FirebaseAuth auth;
@@ -41,7 +41,7 @@ public class EventList extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         if(user == null){
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
         }
@@ -59,8 +59,8 @@ public class EventList extends AppCompatActivity {
 
         list = new ArrayList<>();
 
-        barAdapter = new BarAdapter(this, list);
-        recyclerView.setAdapter(barAdapter);
+        eventFunctions = new EventFunctions(this, list);
+        recyclerView.setAdapter(eventFunctions);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -70,7 +70,7 @@ public class EventList extends AppCompatActivity {
                         Reviews bar = dataSnapshot.getValue(Reviews.class);
                         list.add(bar);
                     }
-                    barAdapter.notifyDataSetChanged();
+                    eventFunctions.notifyDataSetChanged();
             }
 
             @Override
@@ -100,7 +100,7 @@ public class EventList extends AppCompatActivity {
 
         if (id == R.id.logout) {
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
             return true;

@@ -1,6 +1,5 @@
 package com.example.firebasedb;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         if(user == null){
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
         }
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         retryButton = findViewById(R.id.retry_button);
         user = auth.getCurrentUser();
 
-        if (!Utils.isNetworkAvailable(this)) {
+        if (!NetworkAdapter.isNetworkAvailable(this)) {
             Toast.makeText(this, "No Internet Connection", Toast.LENGTH_SHORT).show();
             noInternet.setVisibility(View.VISIBLE);
         }
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         retryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Utils.isNetworkAvailable(MainActivity.this)) {
+                if (NetworkAdapter.isNetworkAvailable(MainActivity.this)) {
                     noInternet.setVisibility(View.GONE);
                 } else {
                     Toast.makeText(MainActivity.this, "No Internet Connection", Toast.LENGTH_SHORT).show();
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.logout) {
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(getApplicationContext(), Login.class);
+            Intent intent = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent);
             finish();
             return true;

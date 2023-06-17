@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.List;
 
-public class Detail_act extends AppCompatActivity {
+public class EventDetail extends AppCompatActivity {
     FirebaseUser user;
     FirebaseAuth auth;
 
@@ -50,7 +50,7 @@ public class Detail_act extends AppCompatActivity {
         user = auth.getCurrentUser();
 
         if(user == null){
-            Intent intent1 = new Intent(getApplicationContext(), Login.class);
+            Intent intent1 = new Intent(getApplicationContext(), LoginWindow.class);
             startActivity(intent1);
             finish();
         }
@@ -82,7 +82,7 @@ public class Detail_act extends AppCompatActivity {
                     startActivity(Intent.createChooser(intent, "Send via"));
                 } else {
                     // Приложение Facebook не найдено, выводим сообщение об ошибке или предложение установить Facebook
-                    Toast.makeText(Detail_act.this, "The app is not installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EventDetail.this, "The app is not installed", Toast.LENGTH_SHORT).show();
                 }
             }
         });

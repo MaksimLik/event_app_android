@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Login extends AppCompatActivity {
+public class LoginWindow extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword;
     Button buttonLogin;
@@ -72,12 +72,12 @@ public class Login extends AppCompatActivity {
                 password = String.valueOf(editTextPassword.getText());
 
                 if(TextUtils.isEmpty(email) ){
-                    Toast.makeText(Login.this, "Please enter email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginWindow.this, "Please enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(Login.this, "Please enter password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginWindow.this, "Please enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -92,7 +92,7 @@ public class Login extends AppCompatActivity {
                                     startActivity(intent);
                                     finish();
                                 } else {
-                                    Toast.makeText(Login.this, "Login failed.",
+                                    Toast.makeText(LoginWindow.this, "Login failed.",
                                             Toast.LENGTH_SHORT).show();
                                 }
                             }

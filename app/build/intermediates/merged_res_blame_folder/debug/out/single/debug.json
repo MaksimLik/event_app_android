@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_activity_description.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\activity_description.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_activity_eventlist.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\activity_eventlist.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -42,10 +50,6 @@
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.firebasedb.app-merged_res-35:/layout_activity_eventlist.xml.flat",
-        "source": "com.example.firebasedb.app-main-37:/layout/activity_eventlist.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_activity_bar_detail.xml.flat",
@@ -132,12 +136,20 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.firebasedb.app-merged_res-35:/layout_activity_detail.xml.flat",
+        "source": "com.example.firebasedb.app-main-37:/layout/activity_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable_registration.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\registration.png"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_activity_barlist.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\activity_barlist.xml"
+    },
+    {
+        "merged": "com.example.firebasedb.app-merged_res-35:/layout_activity_login.xml.flat",
+        "source": "com.example.firebasedb.app-main-37:/layout/activity_login.xml"
     },
     {
         "merged": "com.example.firebasedb.app-merged_res-35:/layout_activity_description.xml.flat",

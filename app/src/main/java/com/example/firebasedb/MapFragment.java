@@ -107,7 +107,7 @@ public class MapFragment extends Fragment {
                             Toast.makeText(getActivity(), "Please select a location", Toast.LENGTH_SHORT).show();
                             return;
                         }
-                        Intent intent = new Intent(getActivity(), DescriptionActivity.class);
+                        Intent intent = new Intent(getActivity(), EventDescription.class);
                         intent.putExtra("lat", latLng.latitude);
                         intent.putExtra("lng", latLng.longitude);
                         startActivity(intent);

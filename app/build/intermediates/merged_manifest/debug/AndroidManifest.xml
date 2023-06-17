@@ -58,7 +58,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
-            android:name="com.example.firebasedb.Detail_act"
+            android:name="com.example.firebasedb.EventDetail"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
         <activity
@@ -74,7 +74,7 @@
             android:value="AIzaSyBvaC3xRt_YD2UnsV1Kvq683maCg2rcnTE" />
 
         <activity
-            android:name="com.example.firebasedb.DescriptionActivity"
+            android:name="com.example.firebasedb.EventDescription"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
         <activity
@@ -82,7 +82,7 @@
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
-            android:name="com.example.firebasedb.Login"
+            android:name="com.example.firebasedb.LoginWindow"
             android:exported="true"
             android:theme="@style/Theme.Material3.Light.NoActionBar" >
             <intent-filter>
