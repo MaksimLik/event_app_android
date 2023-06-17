@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class barlist extends AppCompatActivity {
+public class EventList extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FirebaseDatabase firebaseDatabase;
@@ -36,7 +36,7 @@ public class barlist extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_barlist);
+        setContentView(R.layout.activity_eventlist);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -82,7 +82,7 @@ public class barlist extends AppCompatActivity {
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(barlist.this, MainActivity.class);
+                Intent intent = new Intent(EventList.this, MainActivity.class);
                 startActivity(intent);
             }
         });

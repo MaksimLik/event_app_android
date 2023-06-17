@@ -3,7 +3,6 @@ package com.example.firebasedb;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -108,7 +107,7 @@ public class MapFragment extends Fragment {
                             Toast.makeText(getActivity(), "Please select a location", Toast.LENGTH_SHORT).show();
                             return;
                         }
-                        Intent intent = new Intent(getActivity(), AddReviewActivity.class);
+                        Intent intent = new Intent(getActivity(), DescriptionActivity.class);
                         intent.putExtra("lat", latLng.latitude);
                         intent.putExtra("lng", latLng.longitude);
                         startActivity(intent);

@@ -41,7 +41,7 @@
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme"/>
         <activity
-            android:name=".barlist"
+            android:name=".EventList"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
 
@@ -53,7 +53,7 @@
             android:value="AIzaSyBvaC3xRt_YD2UnsV1Kvq683maCg2rcnTE" />
 
         <activity
-            android:name=".AddReviewActivity"
+            android:name=".DescriptionActivity"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
         <activity

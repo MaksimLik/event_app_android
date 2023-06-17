@@ -118,8 +118,8 @@
 63-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:42:13-56
 64        <activity
 64-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:43:9-46:59
-65            android:name="com.example.firebasedb.barlist"
-65-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:44:13-36
+65            android:name="com.example.firebasedb.EventList"
+65-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:44:13-38
 66            android:exported="false"
 66-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:45:13-37
 67            android:theme="@style/PurpleActionBarTheme" />
@@ -140,8 +140,8 @@
 75
 76        <activity
 76-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:55:9-58:59
-77            android:name="com.example.firebasedb.AddReviewActivity"
-77-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:56:13-46
+77            android:name="com.example.firebasedb.DescriptionActivity"
+77-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:56:13-48
 78            android:exported="false"
 78-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:57:13-37
 79            android:theme="@style/PurpleActionBarTheme" />

@@ -33,7 +33,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Random;
 
-public class AddReviewActivity extends AppCompatActivity {
+public class DescriptionActivity extends AppCompatActivity {
 
     private File img_file;
     private TextInputEditText review_title, review_description;
@@ -51,7 +51,7 @@ public class AddReviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_review);
+        setContentView(R.layout.activity_description);
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         if(user == null){
@@ -89,10 +89,10 @@ public class AddReviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // If the camera permission is not granted
-                if ((ContextCompat.checkSelfPermission(AddReviewActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) ||
-                        (ContextCompat.checkSelfPermission(AddReviewActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)){
+                if ((ContextCompat.checkSelfPermission(DescriptionActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) ||
+                        (ContextCompat.checkSelfPermission(DescriptionActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)){
                     // Request the permission
-                    ActivityCompat.requestPermissions(AddReviewActivity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
+                    ActivityCompat.requestPermissions(DescriptionActivity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
                 } else {
                     // Let the user take a photo or choose from the gallery
                     // Open the upload image activity
@@ -122,16 +122,16 @@ public class AddReviewActivity extends AppCompatActivity {
                         // Update the activity with thumbnail of the image
                         review_image.setImageURI(imageUri);
                         review_image.setVisibility(View.VISIBLE);
-                        Toast.makeText(AddReviewActivity.this, "Image added", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DescriptionActivity.this, "Image added", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(AddReviewActivity.this, "File does not exist", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DescriptionActivity.this, "File does not exist", Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
             else {
-                Toast.makeText(AddReviewActivity.this, "Invalid file type. Supported are: jpg/gif/img/png", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DescriptionActivity.this, "Invalid file type. Supported are: jpg/gif/img/png", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -184,10 +184,10 @@ public class AddReviewActivity extends AppCompatActivity {
             Random random = new Random();
             int id = random.nextInt(1000000);
             databaseReference.child(String.valueOf(id)).setValue(review);
-            Toast.makeText(AddReviewActivity.this, "Review added", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DescriptionActivity.this, "Review added", Toast.LENGTH_SHORT).show();
             finish();
         } else {
-            Toast.makeText(AddReviewActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DescriptionActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
         }
     }
 

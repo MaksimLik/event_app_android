@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -83,7 +82,7 @@ public class Detail_act extends AppCompatActivity {
                     startActivity(Intent.createChooser(intent, "Send via"));
                 } else {
                     // Приложение Facebook не найдено, выводим сообщение об ошибке или предложение установить Facebook
-                    Toast.makeText(Detail_act.this, "The Facebook app is not installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Detail_act.this, "The app is not installed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
