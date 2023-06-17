@@ -35,6 +35,7 @@
     <string name="logout">Logout</string>
     <string name="password">Password</string>
     <string name="project_id" translatable="false">myappmobile-ede7b</string>
+    <string name="ranking">Сhoose a rating, 1 is the minimum, 5 is the maximum</string>
     <string name="rating">Rating</string>
     <string name="registration">Register</string>
     <string name="registration_button_text">If you have account - fill all fields and click login</string>

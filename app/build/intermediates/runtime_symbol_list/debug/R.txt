@@ -3017,6 +3017,7 @@ int drawable m3_tabs_line_indicator 0x7f0800b6
 int drawable m3_tabs_rounded_line_indicator 0x7f0800b7
 int drawable m3_tabs_transparent_background 0x7f0800b8
 int drawable map 0x7f0800b9
+int drawable map_icon 0x7f0800fd
 int drawable material_cursor_drawable 0x7f0800ba
 int drawable material_ic_calendar_black_24dp 0x7f0800bb
 int drawable material_ic_clear_black_24dp 0x7f0800bc
@@ -4024,6 +4025,7 @@ int string path_password_eye_mask_strike_through 0x7f1200bf
 int string path_password_eye_mask_visible 0x7f1200c0
 int string path_password_strike_through 0x7f1200c1
 int string project_id 0x7f1200c2
+int string ranking 0x7f1200d0
 int string rating 0x7f1200c3
 int string registration 0x7f1200c4
 int string registration_button_text 0x7f1200c5
