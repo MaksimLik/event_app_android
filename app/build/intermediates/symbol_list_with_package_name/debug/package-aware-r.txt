@@ -75,6 +75,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array rating_values
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3317,13 +3318,13 @@ id icon_group
 id icon_only
 id idBtnSubmit
 id idEdtReviewDescription
-id idEdtReviewRating
 id idEdtReviewTitle
 id idFABAddImage
 id idIVReviewImage
 id idLocation
 id idMapButton
 id idPBLoading
+id idSpinnerReviewRating
 id idTILReviewDescription
 id idaddReviewFAB
 id ifRoom

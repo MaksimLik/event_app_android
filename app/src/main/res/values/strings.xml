@@ -20,4 +20,12 @@
     <string name="back">Back</string>
     <string name="inform1">If you have account click - Back</string>
     <string name="inform2">If you don\'t have account you must to fill all fields and click - Register</string>
+
+    <string-array name="rating_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

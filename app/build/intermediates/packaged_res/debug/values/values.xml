@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="rating_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="buttonBackColor">#F44336</color>
     <color name="buttonRegColor">#4CAF50</color>

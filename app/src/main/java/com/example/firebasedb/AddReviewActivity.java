@@ -1,6 +1,5 @@
 package com.example.firebasedb;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -16,23 +15,20 @@ import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Objects;
 import java.util.Random;
@@ -40,7 +36,8 @@ import java.util.Random;
 public class AddReviewActivity extends AppCompatActivity {
 
     private File img_file;
-    private TextInputEditText review_title, review_rating, review_description;
+    private TextInputEditText review_title, review_description;
+    private Spinner review_rating;
     private ImageView review_image;
     private DatabaseReference databaseReference;
     private Reviews review;
@@ -66,11 +63,17 @@ public class AddReviewActivity extends AppCompatActivity {
             String appName = user.getEmail();
             setTitle(appName);
         }
+
         review_title = findViewById(R.id.idEdtReviewTitle);
-        review_rating = findViewById(R.id.idEdtReviewRating);
+        review_rating = findViewById(R.id.idSpinnerReviewRating);
+    //    review_rating = findViewById(R.id.idEdtReviewRating);
         review_description = findViewById(R.id.idEdtReviewDescription);
         FloatingActionButton add_photo_btn = findViewById(R.id.idFABAddImage);
         review_image = findViewById(R.id.idIVReviewImage);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        review_rating.setAdapter(adapter);
 
         // Get the latitude and longtiude from the intent extras
         Bundle extras = getIntent().getExtras();
@@ -143,9 +146,9 @@ public class AddReviewActivity extends AppCompatActivity {
         return cursor.getString(column_index);
     }
 
-    private boolean getValues(){
+    private boolean getValues() {
         String title = Objects.requireNonNull(review_title.getText()).toString();
-        String rating = Objects.requireNonNull(review_rating.getText()).toString();
+        String rating = review_rating.getSelectedItem().toString();
         String description = Objects.requireNonNull(review_description.getText()).toString();
         if (title.isEmpty() || rating.isEmpty() || description.isEmpty() || img_file == null) {
             return false;

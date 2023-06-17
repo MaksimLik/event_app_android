@@ -78,12 +78,21 @@
                 android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
                 app:hintTextColor="@color/black">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtReviewRating"
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/idEdtReviewRating"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:inputType="number"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"-->
+<!--                    android:textSize="14sp" />-->
+
+                <Spinner
+                    android:id="@+id/idSpinnerReviewRating"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="45dp"
                     android:importantForAutofill="no"
-                    android:inputType="number"
                     android:textColor="@color/black"
                     android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
                     android:textSize="14sp" />

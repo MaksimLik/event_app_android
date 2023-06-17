@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array rating_values
 color black
 color buttonBackColor
 color buttonRegColor
@@ -25,13 +26,13 @@ id email
 id frame_layout
 id idBtnSubmit
 id idEdtReviewDescription
-id idEdtReviewRating
 id idEdtReviewTitle
 id idFABAddImage
 id idIVReviewImage
 id idLocation
 id idMapButton
 id idPBLoading
+id idSpinnerReviewRating
 id idTILReviewDescription
 id idaddReviewFAB
 id imageView2
