@@ -2986,6 +2986,7 @@ int drawable design_ic_visibility 0x7f080097
 int drawable design_ic_visibility_off 0x7f080098
 int drawable design_password_eye 0x7f080099
 int drawable design_snackbar_background 0x7f08009a
+int drawable download 0x7f0800fd
 int drawable googleg_disabled_color_18 0x7f08009b
 int drawable googleg_standard_color_18 0x7f08009c
 int drawable ic_add 0x7f08009d
@@ -3333,6 +3334,7 @@ int id ignoreRequest 0x7f0900f5
 int id image 0x7f0900f6
 int id imageView2 0x7f0900f7
 int id imageView4 0x7f0900f8
+int id imageView5 0x7f09021e
 int id immediateStop 0x7f0900f9
 int id included 0x7f0900fa
 int id indeterminate 0x7f0900fb

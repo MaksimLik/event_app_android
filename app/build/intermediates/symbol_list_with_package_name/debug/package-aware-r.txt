@@ -2987,6 +2987,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable download
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_add
@@ -3334,6 +3335,7 @@ id ignoreRequest
 id image
 id imageView2
 id imageView4
+id imageView5
 id immediateStop
 id included
 id indeterminate

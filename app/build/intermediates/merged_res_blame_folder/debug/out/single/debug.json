@@ -88,10 +88,6 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\item.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable_map.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\map.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\xml\\data_extraction_rules.xml"
     },
@@ -112,12 +108,20 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\fragment_map.xml"
     },
     {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\activity_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable_progress_back.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\progress_back.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.firebasedb.app-merged_res-35:/drawable_download.jpg.flat",
+        "source": "com.example.firebasedb.app-main-37:/drawable/download.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

@@ -8,6 +8,7 @@ color buttonTwinColor
 color gps_img_color
 color white
 drawable custom_button_back
+drawable download
 drawable ic_add
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -38,6 +39,7 @@ id idTILReviewDescription
 id idaddReviewFAB
 id imageView2
 id imageView4
+id imageView5
 id it_barname
 id it_barphoto
 id it_barrating

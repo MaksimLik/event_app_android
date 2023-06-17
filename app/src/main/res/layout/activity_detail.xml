@@ -7,6 +7,12 @@
     tools:context=".Detail_act"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/download" />
+
     <TextView
         android:id="@+id/name_event"
         android:layout_width="match_parent"
