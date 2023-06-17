@@ -38,7 +38,8 @@
         tools:targetApi="31">
         <activity
             android:name=".Detail_act"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/PurpleActionBarTheme"/>
         <activity
             android:name=".barlist"
             android:exported="false"
@@ -52,12 +53,9 @@
             android:value="AIzaSyBvaC3xRt_YD2UnsV1Kvq683maCg2rcnTE" />
 
         <activity
-            android:name=".BarDetailActivity"
+            android:name=".AddReviewActivity"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
-        <activity
-            android:name=".AddReviewActivity"
-            android:exported="false" />
         <activity
             android:name=".Register"
             android:exported="false"

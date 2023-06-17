@@ -63,8 +63,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/registration"
-            android:backgroundTint="@color/buttonTwinColor" />
+            android:backgroundTint="@color/gps_img_color"
+            android:text="@string/registration" />
 
         <Space
             android:layout_width="16dp"
@@ -75,8 +75,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/login"
-            android:backgroundTint="@color/buttonTwinColor" />
+            android:backgroundTint="@color/gps_img_color"
+            android:text="@string/login" />
 
 
     </LinearLayout>

@@ -59,7 +59,8 @@
         android:theme="@style/Theme.Material3.Light" >
         <activity
             android:name="com.example.firebasedb.Detail_act"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/PurpleActionBarTheme" />
         <activity
             android:name="com.example.firebasedb.barlist"
             android:exported="false"
@@ -73,12 +74,9 @@
             android:value="AIzaSyBvaC3xRt_YD2UnsV1Kvq683maCg2rcnTE" />
 
         <activity
-            android:name="com.example.firebasedb.BarDetailActivity"
+            android:name="com.example.firebasedb.AddReviewActivity"
             android:exported="false"
             android:theme="@style/PurpleActionBarTheme" />
-        <activity
-            android:name="com.example.firebasedb.AddReviewActivity"
-            android:exported="false" />
         <activity
             android:name="com.example.firebasedb.Register"
             android:exported="false"

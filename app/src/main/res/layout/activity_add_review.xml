@@ -133,7 +133,7 @@
                     android:layout_marginEnd="10dp"
                     android:contentDescription="@string/attach_a_photo_to_a_review"
                     android:src="@drawable/proba"
-                    android:backgroundTint="#eadeff"
+                    android:backgroundTint="@color/gps_img_color"
                     app:fabSize="normal" />
             </LinearLayout>
 

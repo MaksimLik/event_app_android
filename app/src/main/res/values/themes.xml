@@ -9,7 +9,7 @@
 
     <style name="PurpleActionBarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize the primary color for the action bar -->
-        <item name="colorPrimary">#6854A4</item>
+        <item name="colorPrimary">@color/gps_img_color</item>
         <!-- Customize the color of the text and icons in the action bar -->
         <item name="android:textColorPrimary">#FFFFFF</item>
     </style>

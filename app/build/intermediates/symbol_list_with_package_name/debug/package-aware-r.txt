@@ -3472,6 +3472,7 @@ id radio
 id rating_event
 id ratio
 id rectangles
+id repostButton
 id retry_button
 id reverseSawtooth
 id right
@@ -3744,7 +3745,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_review
-layout activity_bar_detail
 layout activity_barlist
 layout activity_detail
 layout activity_login
