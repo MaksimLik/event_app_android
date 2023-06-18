@@ -38,9 +38,10 @@ public class EventDescription extends AppCompatActivity {
     private File img_file;
     private TextInputEditText review_title, review_description;
     private Spinner review_rating;
+    private Spinner second_spinner;
     private ImageView review_image;
     private DatabaseReference databaseReference;
-    private Events review;
+    private Events event;
 
     private double ax;
     private double ay;
@@ -66,6 +67,7 @@ public class EventDescription extends AppCompatActivity {
 
         review_title = findViewById(R.id.idEdtReviewTitle);
         review_rating = findViewById(R.id.idSpinnerReviewRating);
+        second_spinner = findViewById(R.id.secondSpinner);
         review_description = findViewById(R.id.idEdtReviewDescription);
         FloatingActionButton add_photo_btn = findViewById(R.id.idFABAddImage);
         review_image = findViewById(R.id.idIVReviewImage);
@@ -73,6 +75,11 @@ public class EventDescription extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //simple_spinner_dropdown_item
         review_rating.setAdapter(adapter);
+
+
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.rating_values2, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //simple_spinner_dropdown_item
+        second_spinner.setAdapter(adapter2);
 
         // Get the latitude and longtiude from the intent extras
         Bundle extras = getIntent().getExtras();
@@ -148,19 +155,21 @@ public class EventDescription extends AppCompatActivity {
     private boolean getValues() {
         String title = Objects.requireNonNull(review_title.getText()).toString();
         String rating = review_rating.getSelectedItem().toString();
+        String type = second_spinner.getSelectedItem().toString();
         String description = Objects.requireNonNull(review_description.getText()).toString();
-        if (title.isEmpty() || rating.isEmpty() || description.isEmpty() || img_file == null) {
+        if (title.isEmpty() || rating.isEmpty() || description.isEmpty() || img_file == null || type.isEmpty()) {
             return false;
         }
         // Convert image file to base64 string
         String img_file_base64 = encodeFileToBase64Binary(img_file);
-        review = new Events();
-        review.setEvent_title(title);
-        review.setEvent_age(rating);
-        review.setEvent_description(description);
-        review.setEvent_image(img_file_base64);
-        review.setEvent_ax(ax);
-        review.setEvent_ay(ay);
+        event = new Events();
+        event.setEvent_title(title);
+        event.setEvent_age(rating);
+        event.setEvent_description(description);
+        event.setEvent_type(type);
+        event.setEvent_image(img_file_base64);
+        event.setEvent_ax(ax);
+        event.setEvent_ay(ay);
         return true;
     }
 
@@ -183,7 +192,7 @@ public class EventDescription extends AppCompatActivity {
             // Generate a random id for the review
             Random random = new Random();
             int id = random.nextInt(1000000);
-            databaseReference.child(String.valueOf(id)).setValue(review);
+            databaseReference.child(String.valueOf(id)).setValue(event);
             Toast.makeText(EventDescription.this, "Review added", Toast.LENGTH_SHORT).show();
             finish();
         } else {

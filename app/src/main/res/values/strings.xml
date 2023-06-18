@@ -21,6 +21,17 @@
     <string name="inform1">If you have account click - Back</string>
     <string name="inform2">If you don\'t have account you must to fill all fields and click - Register</string>
     <string name="age">Сhoose an age category</string>
+    <string name="choose_character_of_event">Choose character of event</string>
+    <string name="second_spinner">Second Spinner</string>
+
+    <string-array name="rating_values2">
+        <item>Sport event</item>
+        <item>Conferences</item>
+        <item>Festivals</item>
+        <item>Concert</item>
+        <item>Mixed</item>
+    </string-array>
+
 
     <string-array name="rating_values">
         <item>For all</item>

@@ -7,6 +7,7 @@ public class Events {
     public String event_name;
     public String event_description;
     public String event_age;
+    public String event_type;
     public double event_ax;
     public double event_ay;
     public String event_image;
@@ -14,13 +15,22 @@ public class Events {
     public Events() {
     }
 
-    public Events(String event_name, String event_age, String event_description, double event_ax, double event_ay, String event_image) {
+    public Events(String event_name, String event_age, String event_description, double event_ax, double event_ay, String event_image, String event_type) {
         this.event_name = event_name;
         this.event_age = event_age;
         this.event_description = event_description;
         this.event_ax = event_ax;
         this.event_ay = event_ay;
         this.event_image = event_image;
+        this.event_type = event_type;
+    }
+
+    public String getEvent_type() {
+        return event_type;
+    }
+
+    public void setEvent_type(String event_type) {
+        this.event_type = event_type;
     }
 
     public void setEvent_title(String title) {

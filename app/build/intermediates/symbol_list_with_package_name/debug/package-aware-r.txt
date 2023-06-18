@@ -76,6 +76,7 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array rating_values
+array rating_values2
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3516,6 +3517,8 @@ id search_view_status_bar_spacer
 id search_view_toolbar
 id search_view_toolbar_container
 id search_voice_btn
+id secondSpinner
+id second_spinner_layout
 id select_dialog_listview
 id selected
 id selection_type
@@ -3883,6 +3886,7 @@ string bottomsheet_drag_handle_content_description
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string choose_character_of_event
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -4042,6 +4046,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string second_spinner
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow

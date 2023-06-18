@@ -11412,7 +11412,13 @@
         <item>For students</item>
         <item>For kids</item>
         <item>For young people</item>
-    </string-array><string name="age_category">Age category</string><string name="name_event">Name of event</string><string name="age">Сhoose an age category</string></file><file path="D:\GitHub\event_app_android\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">
+    </string-array><string name="age_category">Age category</string><string name="name_event">Name of event</string><string name="age">Сhoose an age category</string><string name="second_spinner">Second Spinner</string><string name="choose_character_of_event">Choose character of event</string><string-array name="rating_values2">
+        <item>Sport event</item>
+        <item>Conferences</item>
+        <item>Festivals</item>
+        <item>Concert</item>
+        <item>Mixed</item>
+    </string-array></file><file path="D:\GitHub\event_app_android\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style><style name="Theme.FirebaseDB" parent="Base.Theme.FirebaseDB"/><style name="PurpleActionBarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

@@ -6,6 +6,13 @@
         <item>For kids</item>
         <item>For young people</item>
     </string-array>
+    <string-array name="rating_values2">
+        <item>Sport event</item>
+        <item>Conferences</item>
+        <item>Festivals</item>
+        <item>Concert</item>
+        <item>Mixed</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="buttonBackColor">#F44336</color>
     <color name="buttonRegColor">#4CAF50</color>
@@ -19,6 +26,7 @@
     <string name="app_name">"Map of events"</string>
     <string name="attach_a_photo_to_a_review">Attach a photo to a review</string>
     <string name="back">Back</string>
+    <string name="choose_character_of_event">Choose character of event</string>
     <string name="default_web_client_id" translatable="false">478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com</string>
     <string name="description">Description</string>
     <string name="email">Email</string>
@@ -39,6 +47,7 @@
     <string name="project_id" translatable="false">myappmobile-ede7b</string>
     <string name="registration">Register</string>
     <string name="registration_button_text">If you have account - fill all fields and click login</string>
+    <string name="second_spinner">Second Spinner</string>
     <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
     <string name="title">Name of event</string>
     <style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">

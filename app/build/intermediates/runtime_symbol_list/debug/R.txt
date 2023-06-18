@@ -75,6 +75,7 @@ int animator mtrl_fab_show_motion_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
 int array rating_values 0x7f030000
+int array rating_values2 0x7f030001
 int attr SharedValue 0x7f040000
 int attr SharedValueId 0x7f040001
 int attr actionBarDivider 0x7f040002
@@ -3515,6 +3516,8 @@ int id search_view_status_bar_spacer 0x7f0901aa
 int id search_view_toolbar 0x7f0901ab
 int id search_view_toolbar_container 0x7f0901ac
 int id search_voice_btn 0x7f0901ad
+int id secondSpinner 0x7f090221
+int id second_spinner_layout 0x7f090222
 int id select_dialog_listview 0x7f0901ae
 int id selected 0x7f0901af
 int id selection_type 0x7f0901b0
@@ -3882,6 +3885,7 @@ int string bottomsheet_drag_handle_content_description 0x7f120029
 int string character_counter_content_description 0x7f12002a
 int string character_counter_overflowed_content_description 0x7f12002b
 int string character_counter_pattern 0x7f12002c
+int string choose_character_of_event 0x7f1200d1
 int string clear_text_end_icon_content_description 0x7f12002d
 int string common_google_play_services_enable_button 0x7f12002e
 int string common_google_play_services_enable_text 0x7f12002f
@@ -4041,6 +4045,7 @@ int string search_menu_title 0x7f1200c8
 int string searchbar_scrolling_view_behavior 0x7f1200c9
 int string searchview_clear_text_content_description 0x7f1200ca
 int string searchview_navigation_content_description 0x7f1200cb
+int string second_spinner 0x7f1200d2
 int string side_sheet_accessibility_pane_title 0x7f1200cc
 int string side_sheet_behavior 0x7f1200cd
 int string status_bar_notification_info_overflow 0x7f1200ce

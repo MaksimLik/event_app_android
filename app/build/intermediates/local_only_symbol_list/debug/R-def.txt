@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 array rating_values
+array rating_values2
 color black
 color buttonBackColor
 color buttonRegColor
@@ -53,6 +54,8 @@ id progressBar
 id rating_event
 id repostButton
 id retry_button
+id secondSpinner
+id second_spinner_layout
 id spinner_layout
 id textInform
 id textView4
@@ -75,6 +78,7 @@ string age_category
 string app_name
 string attach_a_photo_to_a_review
 string back
+string choose_character_of_event
 string default_web_client_id
 string description
 string email
@@ -95,6 +99,7 @@ string password
 string project_id
 string registration
 string registration_button_text
+string second_spinner
 string thumbnail_for_an_uploaded_image
 string title
 style Base.Theme.FirebaseDB
