@@ -40,6 +40,10 @@ public class EventItem extends RecyclerView.Adapter<EventItem.EventHolder>{
         Events events = list.get(position);
         holder.eventname.setText(events.getEvent_name());
         holder.eventdescription.setText(String.valueOf(events.getEvent_description()));
+        holder.eventtype.setText(String.valueOf(events.getEvent_type()));
+        holder.eventage.setText(String.valueOf(events.getEvent_age()));
+
+        //добавление 2-ух доп.строк
 
         // Load the image from string using Glide
         String image = events.getEvent_image();
@@ -74,7 +78,7 @@ public class EventItem extends RecyclerView.Adapter<EventItem.EventHolder>{
 
     public static class EventHolder extends RecyclerView.ViewHolder{
 
-        TextView eventname, eventdescription;
+        TextView eventname, eventdescription, eventtype, eventage;
         ImageView eventinamge;
 
         public EventHolder(@NonNull View itemView) {
@@ -82,6 +86,8 @@ public class EventItem extends RecyclerView.Adapter<EventItem.EventHolder>{
 
             eventname = itemView.findViewById(R.id.event_name);
             eventdescription = itemView.findViewById(R.id.event_description);
+            eventtype = itemView.findViewById(R.id.event_type_list);
+            eventage = itemView.findViewById(R.id.eventAge);
             eventinamge = itemView.findViewById(R.id.eventImage);
 
         }

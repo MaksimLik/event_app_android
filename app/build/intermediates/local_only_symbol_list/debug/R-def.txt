@@ -31,11 +31,13 @@ id buttomMap
 id descriptionEventField
 id description_event
 id email
+id eventAge
 id eventImage
 id eventList
 id event_description
 id event_name
 id event_type
+id event_type_list
 id frame_layout
 id idPBLoading
 id idSpinnerReviewRating
@@ -85,6 +87,7 @@ string choose_character_of_event
 string default_web_client_id
 string description
 string email
+string event_type
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

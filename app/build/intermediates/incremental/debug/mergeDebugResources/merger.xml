@@ -11418,7 +11418,7 @@
         <item>For students</item>
         <item>For kids</item>
         <item>For young people</item>
-    </string-array></file><file path="D:\GitHub\event_app_android\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">
+    </string-array><string name="event_type">Event_type</string></file><file path="D:\GitHub\event_app_android\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.FirebaseDB" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style><style name="Theme.FirebaseDB" parent="Base.Theme.FirebaseDB"/><style name="PurpleActionBarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

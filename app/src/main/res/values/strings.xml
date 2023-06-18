@@ -23,6 +23,7 @@
     <string name="age">Сhoose an age category</string>
     <string name="choose_character_of_event">Choose character of event</string>
     <string name="second_spinner">Second Spinner</string>
+    <string name="event_type">Event_type</string>
 
     <string-array name="rating_values2">
         <item>Sport event</item>

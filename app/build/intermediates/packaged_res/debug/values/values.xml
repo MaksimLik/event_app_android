@@ -30,6 +30,7 @@
     <string name="default_web_client_id" translatable="false">478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com</string>
     <string name="description">Description</string>
     <string name="email">Email</string>
+    <string name="event_type">Event_type</string>
     <string name="gcm_defaultSenderId" translatable="false">478844041011</string>
     <string name="google_api_key" translatable="false">AIzaSyBuJ9r-dWpGlEG2H2VMikJOSUuRjfkXcbg</string>
     <string name="google_app_id" translatable="false">1:478844041011:android:0fc9db6afe320c44db7046</string>

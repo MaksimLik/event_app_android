@@ -3284,11 +3284,13 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id eventAge
 id eventImage
 id eventList
 id event_description
 id event_name
 id event_type
+id event_type_list
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3915,6 +3917,7 @@ string description
 string email
 string error_a11y_label
 string error_icon_content_description
+string event_type
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
