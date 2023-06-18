@@ -112,6 +112,10 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\download.jpg"
     },
     {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\layout_traditional_spinner.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\layout\\traditional_spinner.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable_custom_button_back.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\custom_button_back.xml"
     },

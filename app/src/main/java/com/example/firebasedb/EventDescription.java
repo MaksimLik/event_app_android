@@ -71,7 +71,7 @@ public class EventDescription extends AppCompatActivity {
         review_image = findViewById(R.id.idIVReviewImage);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //simple_spinner_dropdown_item
         review_rating.setAdapter(adapter);
 
         // Get the latitude and longtiude from the intent extras

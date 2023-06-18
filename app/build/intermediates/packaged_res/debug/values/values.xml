@@ -49,7 +49,7 @@
         
         <item name="colorPrimary">@color/gps_img_color</item>
         
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">#000000</item>
     </style>
     <style name="Theme.FirebaseDB" parent="Base.Theme.FirebaseDB"/>
 </resources>

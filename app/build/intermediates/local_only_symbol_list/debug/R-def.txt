@@ -64,6 +64,7 @@ layout activity_main
 layout activity_register
 layout fragment_map
 layout item
+layout traditional_spinner
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
