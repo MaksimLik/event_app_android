@@ -3536,6 +3536,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner_layout
 id spline
 id split_action_bar
 id spread

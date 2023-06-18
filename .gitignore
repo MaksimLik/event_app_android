@@ -1,5 +1,8 @@
-/bin
-/build
+# Игнорировать папку bin
+bin/
+
+# Игнорировать все файлы с расширением .lock
+*.lock
 # Gradle files
 .gradle/
 build/

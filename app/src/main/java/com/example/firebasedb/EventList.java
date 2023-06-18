@@ -67,8 +67,8 @@ public class EventList extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                        Events bar = dataSnapshot.getValue(Events.class);
-                        list.add(bar);
+                        Events events = dataSnapshot.getValue(Events.class);
+                        list.add(events);
                     }
                     eventFunctions.notifyDataSetChanged();
             }

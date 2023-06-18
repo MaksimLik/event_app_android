@@ -53,6 +53,7 @@ id progressBar
 id rating_event
 id repostButton
 id retry_button
+id spinner_layout
 id textInform
 id textView4
 layout activity_description

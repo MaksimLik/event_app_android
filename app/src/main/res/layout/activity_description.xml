@@ -34,7 +34,7 @@
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                    android:textColorHint="#616161"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -46,11 +46,11 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
+                android:background="#ffffff"
                 android:hint="@string/description"
                 android:padding="5dp"
-                android:background="#ffffff"
                 android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
-                app:hintTextColor="@color/black">
+                app:hintTextColor="@color/buttonBackColor">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/idEdtReviewDescription"
@@ -60,19 +60,20 @@
                     android:inputType="textMultiLine"
                     android:maxLength="255"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                    android:textColorHint="#FF5722"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="#D3CACA"
+                android:background="#FF5722"
                 android:hint="@string/age_category"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
@@ -81,17 +82,17 @@
                 <Spinner
                     android:id="@+id/idSpinnerReviewRating"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="48dp"
                     android:importantForAutofill="no"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/white"
-                    android:textSize="12sp" /> <!-- Добавлено: фон всплывающего списка -->
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@id/idSpinnerReviewRating"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginEnd="8dp"
                     android:text="@string/age"
                     android:textColor="@color/black"
@@ -146,7 +147,8 @@
                 android:background="@drawable/custom_button_back"
                 android:onClick="button_submit"
                 android:text="@string/add_review"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="#212121" />
 
         </LinearLayout>
 
