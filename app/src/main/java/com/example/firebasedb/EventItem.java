@@ -16,13 +16,13 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class EventFunctions extends RecyclerView.Adapter<EventFunctions.EventHolder>{
+public class EventItem extends RecyclerView.Adapter<EventItem.EventHolder>{
 
 
     Context context;
     ArrayList<Events> list;
 
-    public EventFunctions(Context context, ArrayList<Events> list) {
+    public EventItem(Context context, ArrayList<Events> list) {
         this.context = context;
         this.list = list;
     }
@@ -30,7 +30,7 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.EventHol
     @NonNull
     @Override
     public EventHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        View v = LayoutInflater.from(context).inflate(R.layout.activity_item, parent, false);
         return new EventHolder(v);
     }
 
@@ -82,7 +82,7 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.EventHol
 
             eventname = itemView.findViewById(R.id.event_name);
             eventdescription = itemView.findViewById(R.id.event_description);
-            eventinamge = itemView.findViewById(R.id.it_barphoto);
+            eventinamge = itemView.findViewById(R.id.eventImage);
 
         }
     }

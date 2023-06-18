@@ -3161,6 +3161,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addButton
 id adjust_height
 id adjust_width
 id age_event
@@ -3180,7 +3181,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id barlist
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3199,6 +3199,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_back
 id btn_register
+id buttomMap
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3283,6 +3284,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id eventImage
+id eventList
 id event_description
 id event_name
 id event_type
@@ -3326,12 +3329,9 @@ id hybrid
 id icon
 id icon_group
 id icon_only
-id idLocation
-id idMapButton
 id idPBLoading
 id idSpinnerReviewRating
 id idTILReviewDescription
-id idaddReviewFAB
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3347,7 +3347,6 @@ id indeterminate
 id info
 id invisible
 id inward
-id it_barphoto
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3425,6 +3424,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myLocationButton
 id nameEventField
 id name_event
 id navigation_bar_item_active_indicator_view
@@ -3753,6 +3753,7 @@ layout abc_tooltip
 layout activity_description
 layout activity_detail
 layout activity_eventlist
+layout activity_item
 layout activity_login
 layout activity_main
 layout activity_register
@@ -3775,7 +3776,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_map
-layout item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

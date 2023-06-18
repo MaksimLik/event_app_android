@@ -27,7 +27,7 @@ public class EventList extends AppCompatActivity {
     RecyclerView recyclerView;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    EventFunctions eventFunctions;
+    EventItem eventItem;
     ArrayList<Events> list;
     FloatingActionButton mapButton;
     FirebaseAuth auth;
@@ -49,8 +49,8 @@ public class EventList extends AppCompatActivity {
             String appName = user.getEmail();
             setTitle(appName);
         }
-        recyclerView = findViewById(R.id.barlist);
-        mapButton = findViewById(R.id.idMapButton);
+        recyclerView = findViewById(R.id.eventList);
+        mapButton = findViewById(R.id.buttomMap);
         firebaseDatabase = FirebaseDatabase.getInstance("https://myappmobile-ede7b-default-rtdb.europe-west1.firebasedatabase.app");
         databaseReference = firebaseDatabase.getReference("Events");
 
@@ -59,8 +59,8 @@ public class EventList extends AppCompatActivity {
 
         list = new ArrayList<>();
 
-        eventFunctions = new EventFunctions(this, list);
-        recyclerView.setAdapter(eventFunctions);
+        eventItem = new EventItem(this, list);
+        recyclerView.setAdapter(eventItem);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -70,7 +70,7 @@ public class EventList extends AppCompatActivity {
                         Events events = dataSnapshot.getValue(Events.class);
                         list.add(events);
                     }
-                    eventFunctions.notifyDataSetChanged();
+                    eventItem.notifyDataSetChanged();
             }
 
             @Override

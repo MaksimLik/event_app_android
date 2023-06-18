@@ -16,7 +16,7 @@
         tools:context=".BarDetailActivity" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/idLocation"
+        android:id="@+id/myLocationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -32,7 +32,7 @@
         app:tint="#FFFFFF" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/idaddReviewFAB"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

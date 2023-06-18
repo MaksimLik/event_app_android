@@ -51,7 +51,7 @@ public class MapFragment extends Fragment {
                     }
                 });
 
-                findLocationFAB = view.findViewById(R.id.idLocation);
+                findLocationFAB = view.findViewById(R.id.myLocationButton);
                 findLocationFAB.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -92,7 +92,7 @@ public class MapFragment extends Fragment {
                 });
 
 
-                addReviewFAB = view.findViewById(R.id.idaddReviewFAB);
+                addReviewFAB = view.findViewById(R.id.addButton);
 
                 addReviewFAB.setOnClickListener(new View.OnClickListener() {
                     @Override
