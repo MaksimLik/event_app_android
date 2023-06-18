@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Name of Event:" />
+            android:text="Name of Event: " />
 
         <TextView
             android:id="@+id/name_event"
@@ -40,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Age border:" />
+            android:text="Age border: " />
 
         <TextView
             android:id="@+id/age_event"
@@ -58,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Type of Event:" />
+            android:text="Type of Event: " />
 
         <TextView
             android:id="@+id/event_type"
@@ -76,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="end"
-            android:text="Description:" />
+            android:text="Description: " />
 
         <TextView
             android:id="@+id/description_event"
@@ -85,16 +84,27 @@
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/repostButton"
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="124dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_add"
-        app:backgroundTint="@color/gps_img_color"
-        app:backgroundTintMode="add"
-        app:tint="#FFFFFF" />
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/repostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/repost"
+            app:backgroundTint="@color/gps_img_color"
+            app:backgroundTintMode="add"
+            app:tint="#FFFFFF" />
+
+    </LinearLayout>
+
+
 </LinearLayout>

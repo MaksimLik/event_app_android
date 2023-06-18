@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:importantForAutofill="no"
                     android:inputType="textMultiLine"
-                    android:maxLength="255"
+                    android:maxLength="100"
                     android:textColor="@color/black"
                     android:textColorHint="#FF5722"
                     android:textSize="14sp" />

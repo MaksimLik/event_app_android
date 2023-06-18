@@ -19,6 +19,7 @@ drawable map_icon
 drawable proba
 drawable progress_back
 drawable registration
+drawable repost
 drawable user
 id TextInform2
 id age_event
@@ -70,6 +71,7 @@ layout fragment_map
 layout item
 layout traditional_spinner
 menu menu_main
+mipmap ic_event
 mipmap ic_launcher
 mipmap ic_launcher_round
 string a_button_to_locate_a_user_on_a_map

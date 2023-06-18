@@ -97,12 +97,12 @@
 52        android:extractNativeLibs="false"
 53        android:fullBackupContent="@xml/backup_rules"
 53-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:32:9-54
-54        android:icon="@mipmap/ic_launcher"
-54-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:33:9-43
+54        android:icon="@mipmap/ic_event"
+54-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:33:9-40
 55        android:label="@string/app_name"
 55-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:34:9-41
-56        android:roundIcon="@mipmap/ic_launcher_round"
-56-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:35:9-54
+56        android:roundIcon="@mipmap/ic_event"
+56-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:35:9-45
 57        android:supportsRtl="true"
 57-->D:\GitHub\event_app_android\app\src\main\AndroidManifest.xml:36:9-35
 58        android:testOnly="true"

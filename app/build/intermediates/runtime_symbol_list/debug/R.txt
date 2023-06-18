@@ -3082,6 +3082,7 @@ int drawable notify_panel_notification_icon_bg 0x7f0800f6
 int drawable proba 0x7f0800f7
 int drawable progress_back 0x7f0800f8
 int drawable registration 0x7f0800f9
+int drawable repost 0x7f0800fe
 int drawable test_level_drawable 0x7f0800fa
 int drawable tooltip_frame_dark 0x7f0800fb
 int drawable tooltip_frame_light 0x7f0800fc
@@ -3837,6 +3838,7 @@ int layout select_dialog_singlechoice_material 0x7f0c0071
 int layout support_simple_spinner_dropdown_item 0x7f0c0072
 int layout traditional_spinner 0x7f0c0073
 int menu menu_main 0x7f0e0000
+int mipmap ic_event 0x7f0f0002
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001
 int plurals mtrl_badge_content_description 0x7f100000
