@@ -20,7 +20,7 @@
     <color name="gps_img_color">#FF5722</color>
     <color name="white">#FFFFFFFF</color>
     <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
-    <string name="add_review">Submit</string>
+    <string name="accept_command">Accept</string>
     <string name="age">Сhoose an age category</string>
     <string name="age_category">Age category</string>
     <string name="app_name">"Map of events"</string>

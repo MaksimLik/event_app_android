@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewHolder>{
+public class EventFunctions extends RecyclerView.Adapter<EventFunctions.EventHolder>{
 
 
     Context context;
@@ -29,17 +29,17 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
 
     @NonNull
     @Override
-    public BarViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public EventHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
-        return new BarViewHolder(v);
+        return new EventHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BarViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull EventHolder holder, int position) {
 
         Events events = list.get(position);
         holder.eventname.setText(events.getEvent_name());
-        holder.eventage.setText(String.valueOf(events.getEvent_age()));
+        holder.eventdescription.setText(String.valueOf(events.getEvent_description()));
 
         // Load the image from string using Glide
         String image = events.getEvent_image();
@@ -57,14 +57,11 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
                 intent.putExtra("EVENT_NAME", events.getEvent_name());
                 intent.putExtra("EVENT_DESCRIPTION", events.getEvent_description());
                 intent.putExtra("EVENT_AGE", events.getEvent_age());
+                intent.putExtra("EVENT_TYPE", events.getEvent_type());
+
 
                 v.getContext().startActivity(intent);
 
-//                // Move to new activity
-//                v.getContext().startActivity(new Intent(v.getContext(), BarDetailActivity.class));
-//                Intent intent = new Intent();
-//                intent.putExtra("BAR_NAME", bar.getBeer_name());
-//                intent.putExtra("BAR_RATING", bar.getBeer_rating());
 
             }
         });
@@ -75,16 +72,16 @@ public class EventFunctions extends RecyclerView.Adapter<EventFunctions.BarViewH
         return list.size();
     }
 
-    public static class BarViewHolder extends RecyclerView.ViewHolder{
+    public static class EventHolder extends RecyclerView.ViewHolder{
 
-        TextView eventname, eventage;
+        TextView eventname, eventdescription;
         ImageView eventinamge;
 
-        public BarViewHolder(@NonNull View itemView) {
+        public EventHolder(@NonNull View itemView) {
             super(itemView);
 
-            eventname = itemView.findViewById(R.id.it_barname);
-            eventage = itemView.findViewById(R.id.it_barrating);
+            eventname = itemView.findViewById(R.id.event_name);
+            eventdescription = itemView.findViewById(R.id.event_description);
             eventinamge = itemView.findViewById(R.id.it_barphoto);
 
         }

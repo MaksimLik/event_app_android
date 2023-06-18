@@ -3092,6 +3092,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id EventAccept
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3245,6 +3246,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriptionEventField
 id description_event
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -3281,6 +3283,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id event_description
+id event_name
 id event_type
 id exitUntilCollapsed
 id expand_activities_button
@@ -3322,11 +3326,6 @@ id hybrid
 id icon
 id icon_group
 id icon_only
-id idBtnSubmit
-id idEdtReviewDescription
-id idEdtReviewTitle
-id idFABAddImage
-id idIVReviewImage
 id idLocation
 id idMapButton
 id idPBLoading
@@ -3337,6 +3336,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageEventField
+id imageEventField2
 id imageView2
 id imageView4
 id imageView5
@@ -3346,9 +3347,7 @@ id indeterminate
 id info
 id invisible
 id inward
-id it_barname
 id it_barphoto
-id it_barrating
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3426,6 +3425,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameEventField
 id name_event
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3872,7 +3872,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string add_review
+string accept_command
 string age
 string age_category
 string androidx_startup

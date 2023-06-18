@@ -65,12 +65,12 @@ public class EventDescription extends AppCompatActivity {
             setTitle(appName);
         }
 
-        review_title = findViewById(R.id.idEdtReviewTitle);
+        review_title = findViewById(R.id.nameEventField);
         review_rating = findViewById(R.id.idSpinnerReviewRating);
         second_spinner = findViewById(R.id.secondSpinner);
-        review_description = findViewById(R.id.idEdtReviewDescription);
-        FloatingActionButton add_photo_btn = findViewById(R.id.idFABAddImage);
-        review_image = findViewById(R.id.idIVReviewImage);
+        review_description = findViewById(R.id.descriptionEventField);
+        FloatingActionButton add_photo_btn = findViewById(R.id.imageEventField);
+        review_image = findViewById(R.id.imageEventField2);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //simple_spinner_dropdown_item

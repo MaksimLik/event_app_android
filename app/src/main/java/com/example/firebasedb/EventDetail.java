@@ -43,7 +43,7 @@ public class EventDetail extends AppCompatActivity {
         String eventName = intent.getStringExtra("EVENT_NAME");
         String eventDescription = intent.getStringExtra("EVENT_DESCRIPTION");
         String eventAge = intent.getStringExtra("EVENT_AGE");
-        String eventType = intent.getStringExtra("EVENT_TYPE");
+        String eventType = intent.getStringExtra("EVENT_TYPE"); //dodane
 
         // Set the TextViews with the data from BarAdapter.java
         name_of_event.setText(eventName);
