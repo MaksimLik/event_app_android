@@ -3161,6 +3161,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id age_event
 id alertTitle
 id aligned
 id all
@@ -3279,6 +3280,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id event_type
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3470,7 +3472,6 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id radio
-id rating_event
 id ratio
 id rectangles
 id repostButton

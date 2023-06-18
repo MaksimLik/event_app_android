@@ -21,11 +21,13 @@ drawable progress_back
 drawable registration
 drawable user
 id TextInform2
+id age_event
 id barlist
 id btn_back
 id btn_register
 id description_event
 id email
+id event_type
 id frame_layout
 id idBtnSubmit
 id idEdtReviewDescription
@@ -51,7 +53,6 @@ id no_internet_layout
 id no_internet_text
 id password
 id progressBar
-id rating_event
 id repostButton
 id retry_button
 id secondSpinner

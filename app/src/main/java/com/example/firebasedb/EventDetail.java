@@ -22,7 +22,8 @@ public class EventDetail extends AppCompatActivity {
 
     TextView name_of_event;
     TextView description_of_event;
-    TextView rating_of_event;
+    TextView age_of_event;
+    TextView type_of_event;
 
     FloatingActionButton repostButton;
 
@@ -33,7 +34,8 @@ public class EventDetail extends AppCompatActivity {
 
         name_of_event = findViewById(R.id.name_event);
         description_of_event = findViewById(R.id.description_event);
-        rating_of_event = findViewById(R.id.rating_event);
+        age_of_event = findViewById(R.id.age_event);
+        type_of_event = findViewById(R.id.event_type);
         repostButton = findViewById(R.id.repostButton);
 
         // Retrieve data from the intent extras sent by BarAdapter.java
@@ -41,11 +43,13 @@ public class EventDetail extends AppCompatActivity {
         String eventName = intent.getStringExtra("EVENT_NAME");
         String eventDescription = intent.getStringExtra("EVENT_DESCRIPTION");
         String eventAge = intent.getStringExtra("EVENT_AGE");
+        String eventType = intent.getStringExtra("EVENT_TYPE");
 
         // Set the TextViews with the data from BarAdapter.java
         name_of_event.setText(eventName);
+        type_of_event.setText(eventType);
         description_of_event.setText(eventDescription);
-        rating_of_event.setText(eventAge);
+        age_of_event.setText(eventAge);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -65,9 +69,12 @@ public class EventDetail extends AppCompatActivity {
             public void onClick(View v) {
                 String eventTitle = name_of_event.getText().toString();
                 String eventDescription = description_of_event.getText().toString();
+                String eventAge = age_of_event.getText().toString();
+                String eventType = type_of_event.getText().toString();
 
                 // Создайте текстовое сообщение, которое будет отправлено в Facebook
-                String message = "I recommend attending the following event: " + eventTitle + "\nDescription: " + eventDescription;
+                String message = "I recommend attending the following event: " + eventTitle + "\nWho is this event for? " + eventAge +
+                    "\nType of event: " + eventType +  "\nDescription: " + eventDescription;
 
                 // Создайте Intent для отправки сообщения в Facebook
                 Intent intent = new Intent(Intent.ACTION_SEND);
@@ -83,7 +90,7 @@ public class EventDetail extends AppCompatActivity {
                     startActivity(Intent.createChooser(intent, "Send via"));
                 } else {
                     // Приложение Facebook не найдено, выводим сообщение об ошибке или предложение установить Facebook
-                    Toast.makeText(EventDetail.this, "The app is not installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EventDetail.this, "The app is not installed in your phone", Toast.LENGTH_SHORT).show();
                 }
             }
         });
