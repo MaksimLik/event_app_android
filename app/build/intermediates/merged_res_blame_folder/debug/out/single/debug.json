@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\repost.png"
     },
     {
+        "merged": "com.example.firebasedb.app-merged_res-35:/layout_activity_item.xml.flat",
+        "source": "com.example.firebasedb.app-main-37:/layout/activity_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\drawable\\ic_launcher_background.xml"
     },
@@ -54,10 +58,6 @@
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.firebasedb.app-merged_res-35:/layout_fragment_map.xml.flat",
-        "source": "com.example.firebasedb.app-main-37:/layout/fragment_map.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.0\\com.example.firebasedb.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",

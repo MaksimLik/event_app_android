@@ -16,7 +16,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_my_location_black_24dp
 drawable login
-drawable map_icon
 drawable proba
 drawable progress_back
 drawable registration
@@ -28,7 +27,7 @@ id addButton
 id age_event
 id btn_back
 id btn_register
-id buttomMap
+id buttonMap
 id description_event
 id email
 id eventAge

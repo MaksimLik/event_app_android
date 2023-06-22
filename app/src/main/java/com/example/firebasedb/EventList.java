@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +30,7 @@ public class EventList extends AppCompatActivity {
     DatabaseReference databaseReference;
     EventItem eventItem;
     ArrayList<Events> list;
-    FloatingActionButton mapButton;
+    Button mapButton;
     FirebaseAuth auth;
     FirebaseUser user;
 
@@ -50,7 +51,7 @@ public class EventList extends AppCompatActivity {
             setTitle(appName);
         }
         recyclerView = findViewById(R.id.eventList);
-        mapButton = findViewById(R.id.buttomMap);
+        mapButton = findViewById(R.id.buttonMap);
         firebaseDatabase = FirebaseDatabase.getInstance("https://myappmobile-ede7b-default-rtdb.europe-west1.firebasedatabase.app");
         databaseReference = firebaseDatabase.getReference("Events");
 
