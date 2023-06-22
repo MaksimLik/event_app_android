@@ -68,8 +68,8 @@ public class EventDescription extends AppCompatActivity {
         review_title = findViewById(R.id.nameEventField);
         review_rating = findViewById(R.id.idSpinnerReviewRating);
         second_spinner = findViewById(R.id.secondSpinner);
-        review_description = findViewById(R.id.descriptionEventField);
-        FloatingActionButton add_photo_btn = findViewById(R.id.imageEventField);
+        review_description = findViewById(R.id.setEventData);
+        FloatingActionButton add_image = findViewById(R.id.imageEventField);
         review_image = findViewById(R.id.imageEventField2);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
@@ -92,7 +92,7 @@ public class EventDescription extends AppCompatActivity {
         databaseReference = firebaseDatabase.getReference("Events");
 
         // Add functionality to the add_photo_btn
-        add_photo_btn.setOnClickListener(new View.OnClickListener() {
+        add_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // If the camera permission is not granted

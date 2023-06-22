@@ -11,7 +11,8 @@
     <string name="accept_command">Accept</string>
     <string name="age_category">Age category</string>
     <string name="name_event">Name of event</string>
-    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="date_of_event">Date of event: DD:MM:YYYY</string>
     <string name="add_photo">Add photo</string>
     <string name="add_photo2">For photo</string>
     <string name="title">Name of event</string>
@@ -23,7 +24,7 @@
     <string name="age">Сhoose an age category</string>
     <string name="choose_character_of_event">Choose character of event</string>
     <string name="second_spinner">Second Spinner</string>
-    <string name="event_type">Event_type</string>
+    <string name="event_type">Event type</string>
 
     <string-array name="rating_values2">
         <item>Sport event</item>

@@ -21,12 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Name of Event: " />
+            android:text="Name of Event: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/name_event"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -39,12 +44,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Age border: " />
+            android:text="Age border: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/age_event"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -57,12 +67,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Type of Event: " />
+            android:text="Type of Event: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/event_type"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -75,12 +90,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="end"
-            android:text="Description: " />
+            android:text="Date: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/description_event"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

@@ -104,10 +104,6 @@
         "source": "com.example.firebasedb.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.firebasedb.app-merged_res-35:/drawable_custom_button_background.xml.flat",
-        "source": "com.example.firebasedb.app-main-37:/drawable/custom_button_background.xml"
-    },
-    {
         "merged": "com.example.firebasedb.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "com.example.firebasedb.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
     },

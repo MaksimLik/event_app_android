@@ -14,58 +14,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">>
+            android:gravity="center"
+            android:orientation="vertical">>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:hint="@string/name_event"
-                android:padding="5dp"
-                android:background="#ffffff"
-                android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
-                app:hintTextColor="@color/black">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/nameEventField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:textColor="@color/black"
-                    android:textColorHint="#616161"
-                    android:textSize="14sp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/idTILReviewDescription"
+                android:id="@+id/second_spinner_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="#ffffff"
-                android:hint="@string/description"
+                android:background="#FFFFFF"
+                android:hint="@string/second_spinner"
                 android:padding="5dp"
-                android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
-                app:hintTextColor="@color/buttonBackColor">
+                app:hintTextColor="@color/black">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/descriptionEventField"
+                <Spinner
+                    android:id="@+id/secondSpinner"
                     android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:inputType="textMultiLine"
-                    android:maxLength="100"
+                    android:layout_alignBottom="@id/secondSpinner"
+                    android:text="@string/choose_character_of_event"
                     android:textColor="@color/black"
-                    android:textColorHint="#FF5722"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/spinner_layout"
@@ -97,33 +76,53 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/second_spinner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#ffffff"
+                android:hint="@string/name_event"
+                android:padding="5dp"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEventField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/eventDateField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="#FFFFFF"
-                android:hint="@string/second_spinner"
+                android:background="#ffffff"
+                android:hint="@string/date_of_event"
                 android:padding="5dp"
-                app:hintTextColor="@color/black">
+                android:textColorHint="@color/common_google_signin_btn_text_dark_disabled"
+                app:hintTextColor="@color/buttonBackColor">
 
-                <Spinner
-                    android:id="@+id/secondSpinner"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/setEventData"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:textColorHint="@color/black"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/secondSpinner"
-                    android:text="@string/choose_character_of_event"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
                     android:textColor="@color/black"
+                    android:textColorHint="#FF5722"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -154,11 +153,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/gps_img_color"
                     android:contentDescription="@string/add_photo"
                     android:src="@drawable/proba"
-                    android:backgroundTint="@color/gps_img_color"
                     app:fabSize="normal" />
             </LinearLayout>
 

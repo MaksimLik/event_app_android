@@ -10,7 +10,6 @@ color gps_img_color
 color green
 color white
 drawable custom_button_back
-drawable custom_button_background
 drawable download
 drawable ic_add
 drawable ic_launcher_background
@@ -30,10 +29,10 @@ id age_event
 id btn_back
 id btn_register
 id buttomMap
-id descriptionEventField
 id description_event
 id email
 id eventAge
+id eventDateField
 id eventImage
 id eventList
 id event_description
@@ -43,7 +42,6 @@ id event_type_list
 id frame_layout
 id idPBLoading
 id idSpinnerReviewRating
-id idTILReviewDescription
 id imageEventField
 id imageEventField2
 id imageView2
@@ -62,6 +60,7 @@ id repostButton
 id retry_button
 id secondSpinner
 id second_spinner_layout
+id setEventData
 id spinner_layout
 id textInform
 id textView4
@@ -80,14 +79,16 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string a_button_to_locate_a_user_on_a_map
 string accept_command
+string add_photo
+string add_photo2
 string age
 string age_category
 string app_name
-string attach_a_photo_to_a_review
 string back
 string choose_character_of_event
+string date
+string date_of_event
 string default_web_client_id
-string description
 string email
 string event_type
 string gcm_defaultSenderId
@@ -108,7 +109,6 @@ string project_id
 string registration
 string registration_button_text
 string second_spinner
-string thumbnail_for_an_uploaded_image
 string title
 style Base.Theme.FirebaseDB
 style PurpleActionBarTheme

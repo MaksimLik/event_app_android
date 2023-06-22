@@ -2984,7 +2984,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_button_back
-drawable custom_button_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3249,7 +3248,6 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id descriptionEventField
 id description_event
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -3287,6 +3285,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id eventAge
+id eventDateField
 id eventImage
 id eventList
 id event_description
@@ -3335,7 +3334,6 @@ id icon_group
 id icon_only
 id idPBLoading
 id idSpinnerReviewRating
-id idTILReviewDescription
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3528,6 +3526,7 @@ id second_spinner_layout
 id select_dialog_listview
 id selected
 id selection_type
+id setEventData
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3877,12 +3876,13 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string accept_command
+string add_photo
+string add_photo2
 string age
 string age_category
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
-string attach_a_photo_to_a_review
 string back
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
@@ -3914,8 +3914,9 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string date
+string date_of_event
 string default_web_client_id
-string description
 string email
 string error_a11y_label
 string error_icon_content_description
@@ -4058,7 +4059,6 @@ string second_spinner
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
-string thumbnail_for_an_uploaded_image
 string title
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
