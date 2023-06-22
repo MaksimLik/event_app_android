@@ -20,7 +20,6 @@
     <color name="gps_img_color">#FF5722</color>
     <color name="green">#8BC34A</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
     <string name="accept_command">Accept</string>
     <string name="add_photo">Add photo</string>
     <string name="add_photo2">For photo</string>
@@ -28,12 +27,13 @@
     <string name="age_category">Age category</string>
     <string name="app_name">"Map of events"</string>
     <string name="back">Back</string>
+    <string name="button_location">For locate</string>
     <string name="choose_character_of_event">Choose character of event</string>
     <string name="date">Date</string>
     <string name="date_of_event">Date of event: DD:MM:YYYY</string>
     <string name="default_web_client_id" translatable="false">478844041011-m9kp0gsr47fhliujdkdk53r4euip411q.apps.googleusercontent.com</string>
     <string name="email">Email</string>
-    <string name="event_type">Event_type</string>
+    <string name="event_type">Event type</string>
     <string name="gcm_defaultSenderId" translatable="false">478844041011</string>
     <string name="google_api_key" translatable="false">AIzaSyBuJ9r-dWpGlEG2H2VMikJOSUuRjfkXcbg</string>
     <string name="google_app_id" translatable="false">1:478844041011:android:0fc9db6afe320c44db7046</string>

@@ -77,7 +77,6 @@ menu menu_main
 mipmap ic_event
 mipmap ic_launcher
 mipmap ic_launcher_round
-string a_button_to_locate_a_user_on_a_map
 string accept_command
 string add_photo
 string add_photo2
@@ -85,6 +84,7 @@ string age
 string age_category
 string app_name
 string back
+string button_location
 string choose_character_of_event
 string date
 string date_of_event
