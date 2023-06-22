@@ -1447,6 +1447,7 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gps_img_color
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2983,6 +2984,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_button_back
+drawable custom_button_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off

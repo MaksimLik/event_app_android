@@ -6,4 +6,5 @@
     <color name="buttonBackColor">#F44336</color>
     <color name="buttonTwinColor">#E8BEAC</color>
     <color name="gps_img_color">#FF5722</color>
+    <color name="green">#8BC34A</color>
 </resources>

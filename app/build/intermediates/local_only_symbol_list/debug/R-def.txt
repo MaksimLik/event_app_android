@@ -7,8 +7,10 @@ color buttonBackColor
 color buttonRegColor
 color buttonTwinColor
 color gps_img_color
+color green
 color white
 drawable custom_button_back
+drawable custom_button_background
 drawable download
 drawable ic_add
 drawable ic_launcher_background

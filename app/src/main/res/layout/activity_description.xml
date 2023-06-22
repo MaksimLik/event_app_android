@@ -14,7 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -138,7 +139,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/thumbnail_for_an_uploaded_image"
+                    android:contentDescription="@string/add_photo2"
                     android:scaleType="fitXY"
                     android:visibility="visible" />
 
@@ -155,7 +156,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/attach_a_photo_to_a_review"
+                    android:contentDescription="@string/add_photo"
                     android:src="@drawable/proba"
                     android:backgroundTint="@color/gps_img_color"
                     app:fabSize="normal" />
@@ -163,16 +164,16 @@
 
             <Button
                 android:id="@+id/EventAccept"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/custom_button_back"
                 android:onClick="button_submit"
                 android:text="@string/accept_command"
                 android:textAllCaps="false"
-                android:textColor="#212121" />
+                android:textColor="@android:color/white" /><!-- Цвет текста кнопки -->
+
 
         </LinearLayout>
 

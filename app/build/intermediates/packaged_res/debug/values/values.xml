@@ -18,6 +18,7 @@
     <color name="buttonRegColor">#4CAF50</color>
     <color name="buttonTwinColor">#E8BEAC</color>
     <color name="gps_img_color">#FF5722</color>
+    <color name="green">#8BC34A</color>
     <color name="white">#FFFFFFFF</color>
     <string name="a_button_to_locate_a_user_on_a_map">A button to locate a user on a map</string>
     <string name="accept_command">Accept</string>

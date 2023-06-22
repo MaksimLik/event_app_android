@@ -12,8 +12,8 @@
     <string name="age_category">Age category</string>
     <string name="name_event">Name of event</string>
     <string name="description">Description</string>
-    <string name="attach_a_photo_to_a_review">Attach a photo to a review</string>
-    <string name="thumbnail_for_an_uploaded_image">Thumbnail for an uploaded image</string>
+    <string name="add_photo">Add photo</string>
+    <string name="add_photo2">For photo</string>
     <string name="title">Name of event</string>
     <string name="login_button_text">If you don\'t have an account click to Register</string>
     <string name="registration_button_text">If you have account - fill all fields and click login</string>
