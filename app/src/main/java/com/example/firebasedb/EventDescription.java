@@ -36,8 +36,8 @@ import java.util.Random;
 public class EventDescription extends AppCompatActivity {
 
     private File img_file;
-    private TextInputEditText review_title, review_description;
-    private Spinner review_rating;
+    private TextInputEditText name_event, date_event;
+    private Spinner first_spinner;
     private Spinner second_spinner;
     private ImageView review_image;
     private DatabaseReference databaseReference;
@@ -65,16 +65,16 @@ public class EventDescription extends AppCompatActivity {
             setTitle(appName);
         }
 
-        review_title = findViewById(R.id.nameEventField);
-        review_rating = findViewById(R.id.idSpinnerReviewRating);
+        name_event = findViewById(R.id.nameEventField);
+        first_spinner = findViewById(R.id.spinnerAge);
         second_spinner = findViewById(R.id.secondSpinner);
-        review_description = findViewById(R.id.setEventData);
+        date_event = findViewById(R.id.setEventData);
         FloatingActionButton add_image = findViewById(R.id.imageEventField);
         review_image = findViewById(R.id.imageEventField2);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.rating_values, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //simple_spinner_dropdown_item
-        review_rating.setAdapter(adapter);
+        first_spinner.setAdapter(adapter);
 
 
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.rating_values2, android.R.layout.simple_spinner_item);
@@ -153,18 +153,18 @@ public class EventDescription extends AppCompatActivity {
     }
 
     private boolean getValues() {
-        String title = Objects.requireNonNull(review_title.getText()).toString();
-        String rating = review_rating.getSelectedItem().toString();
+        String title = Objects.requireNonNull(name_event.getText()).toString();
+        String age = first_spinner.getSelectedItem().toString();
         String type = second_spinner.getSelectedItem().toString();
-        String description = Objects.requireNonNull(review_description.getText()).toString();
-        if (title.isEmpty() || rating.isEmpty() || description.isEmpty() || img_file == null || type.isEmpty()) {
+        String description = Objects.requireNonNull(date_event.getText()).toString();
+        if (title.isEmpty() || age.isEmpty() || description.isEmpty() || img_file == null || type.isEmpty()) {
             return false;
         }
         // Convert image file to base64 string
         String img_file_base64 = encodeFileToBase64Binary(img_file);
         event = new Events();
         event.setEvent_title(title);
-        event.setEvent_age(rating);
+        event.setEvent_age(age);
         event.setEvent_description(description);
         event.setEvent_type(type);
         event.setEvent_image(img_file_base64);

@@ -74,7 +74,7 @@ public class EventDetail extends AppCompatActivity {
 
                 // Создайте текстовое сообщение, которое будет отправлено в Facebook
                 String message = "I recommend attending the following event: " + eventTitle + "\nWho is this event for? " + eventAge +
-                    "\nType of event: " + eventType +  "\nDescription: " + eventDescription;
+                    "\nType of event: " + eventType +  "\nDate of event: " + eventDescription;
 
                 // Создайте Intent для отправки сообщения в Facebook
                 Intent intent = new Intent(Intent.ACTION_SEND);

@@ -3332,7 +3332,6 @@ id icon
 id icon_group
 id icon_only
 id idPBLoading
-id idSpinnerReviewRating
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3543,6 +3542,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerAge
 id spinner_layout
 id spline
 id split_action_bar

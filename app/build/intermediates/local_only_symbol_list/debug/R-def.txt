@@ -40,7 +40,6 @@ id event_type
 id event_type_list
 id frame_layout
 id idPBLoading
-id idSpinnerReviewRating
 id imageEventField
 id imageEventField2
 id imageView2
@@ -60,6 +59,7 @@ id retry_button
 id secondSpinner
 id second_spinner_layout
 id setEventData
+id spinnerAge
 id spinner_layout
 id textInform
 id textView4

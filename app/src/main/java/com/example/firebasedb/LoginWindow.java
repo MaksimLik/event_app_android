@@ -72,12 +72,12 @@ public class LoginWindow extends AppCompatActivity {
                 password = String.valueOf(editTextPassword.getText());
 
                 if(TextUtils.isEmpty(email) ){
-                    Toast.makeText(LoginWindow.this, "Please enter email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginWindow.this, "Please input your email", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(LoginWindow.this, "Please enter password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginWindow.this, "Please input your password", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -87,12 +87,12 @@ public class LoginWindow extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_LONG).show();
                                     Intent intent = new Intent(getApplicationContext(), EventList.class);
                                     startActivity(intent);
                                     finish();
                                 } else {
-                                    Toast.makeText(LoginWindow.this, "Login failed.",
+                                    Toast.makeText(LoginWindow.this, "Login failed",
                                             Toast.LENGTH_SHORT).show();
                                 }
                             }
